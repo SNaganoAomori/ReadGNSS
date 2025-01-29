@@ -1,0 +1,1486 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:b="http://www.bizstation.jp/waypoint_extension" creator="Drogger GPS for Android 2.15.274" version="1.1">
+<wpt lat="40.923711446" lon="141.272775903">
+		<ele>83.1368</ele>
+		<time>2024-10-24T10:24:50.199+09:00</time>
+		<geoidheight>36.0162</geoidheight>
+		<name>r34</name>
+		<cmt>Raw-data lat=40.923711446 lon=141.272775903 ellipsoidHeight=119.153 Measurement_time_sec=10</cmt>
+		<fix>dgps</fix>
+		<sat>25</sat>
+		<hdop>0.56</hdop>
+		<vdop>1.083882</vdop>
+		<pdop>1.22</pdop>
+		<extensions>
+			<b:pointNumber>34</b:pointNumber>
+			<b:coordGenaration>The current</b:coordGenaration>
+			<b:measurement>
+				<b:test_tag>test row</b:test_tag>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2024-10-24T10:24:41.199</b:starttime>
+				<b:endtime>2024-10-24T10:24:50.199</b:endtime>
+				<b:epochs>10</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.0713</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.0702</b:stddevHeightMeter>
+				<b:lastHacc>0.213</b:lastHacc>
+				<b:lastVacc>0.408</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.000</b:tiltAntHeight>
+				<b:antennaHeightNote>2.000</b:antennaHeightNote>
+				<b:antennaHeightConst>0.200</b:antennaHeightConst>
+				<b:antennaHeightMesure>1.800</b:antennaHeightMesure>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>RWS.DC03 HPG 1.32</b:receiverName>
+				<b:antennaType>HX-CSX601A+XPackage</b:antennaType>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="40.924012185" lon="141.272768045">
+		<ele>84.1899</ele>
+		<time>2024-10-24T10:26:26.899+09:00</time>
+		<geoidheight>36.0151</geoidheight>
+		<name>r35</name>
+		<cmt>Raw-data lat=40.924012185 lon=141.272768045 ellipsoidHeight=120.205 Measurement_time_sec=10</cmt>
+		<fix>dgps</fix>
+		<sat>25</sat>
+		<hdop>0.56</hdop>
+		<vdop>1.0951256</vdop>
+		<pdop>1.23</pdop>
+		<extensions>
+			<b:pointNumber>35</b:pointNumber>
+			<b:coordGenaration>The current</b:coordGenaration>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2024-10-24T10:26:17.899</b:starttime>
+				<b:endtime>2024-10-24T10:26:26.899</b:endtime>
+				<b:epochs>10</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.2933</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.5781</b:stddevHeightMeter>
+				<b:lastHacc>0.222</b:lastHacc>
+				<b:lastVacc>0.443</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.000</b:tiltAntHeight>
+				<b:antennaHeightNote>2.000</b:antennaHeightNote>
+				<b:antennaHeightConst>0.200</b:antennaHeightConst>
+				<b:antennaHeightMesure>1.800</b:antennaHeightMesure>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>RWS.DC03 HPG 1.32</b:receiverName>
+				<b:antennaType>HX-CSX601A+XPackage</b:antennaType>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="40.924322551" lon="141.272651794">
+		<ele>86.1818</ele>
+		<time>2024-10-24T10:27:41.599+09:00</time>
+		<geoidheight>36.0142</geoidheight>
+		<name>r36</name>
+		<cmt>Raw-data lat=40.924322551 lon=141.272651794 ellipsoidHeight=122.196 Measurement_time_sec=10</cmt>
+		<fix>dgps</fix>
+		<sat>25</sat>
+		<hdop>0.53</hdop>
+		<vdop>1.020588</vdop>
+		<pdop>1.15</pdop>
+		<extensions>
+			<b:pointNumber>36</b:pointNumber>
+			<b:coordGenaration>The current</b:coordGenaration>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2024-10-24T10:27:32.599</b:starttime>
+				<b:endtime>2024-10-24T10:27:41.599</b:endtime>
+				<b:epochs>10</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.7429</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.6807</b:stddevHeightMeter>
+				<b:lastHacc>0.253</b:lastHacc>
+				<b:lastVacc>0.478</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.000</b:tiltAntHeight>
+				<b:antennaHeightNote>2.000</b:antennaHeightNote>
+				<b:antennaHeightConst>0.200</b:antennaHeightConst>
+				<b:antennaHeightMesure>1.800</b:antennaHeightMesure>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>RWS.DC03 HPG 1.32</b:receiverName>
+				<b:antennaType>HX-CSX601A+XPackage</b:antennaType>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="40.924556725" lon="141.272493498">
+		<ele>88.4972</ele>
+		<time>2024-10-24T10:28:39.000+09:00</time>
+		<geoidheight>36.0138</geoidheight>
+		<name>r37</name>
+		<cmt>Raw-data lat=40.924556725 lon=141.272493498 ellipsoidHeight=124.511 Measurement_time_sec=10</cmt>
+		<fix>dgps</fix>
+		<sat>25</sat>
+		<hdop>0.53</hdop>
+		<vdop>1.020588</vdop>
+		<pdop>1.15</pdop>
+		<extensions>
+			<b:pointNumber>37</b:pointNumber>
+			<b:coordGenaration>The current</b:coordGenaration>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2024-10-24T10:28:30.000</b:starttime>
+				<b:endtime>2024-10-24T10:28:39.000</b:endtime>
+				<b:epochs>10</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.6051</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.2815</b:stddevHeightMeter>
+				<b:lastHacc>0.25</b:lastHacc>
+				<b:lastVacc>0.427</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.000</b:tiltAntHeight>
+				<b:antennaHeightNote>2.000</b:antennaHeightNote>
+				<b:antennaHeightConst>0.200</b:antennaHeightConst>
+				<b:antennaHeightMesure>1.800</b:antennaHeightMesure>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>RWS.DC03 HPG 1.32</b:receiverName>
+				<b:antennaType>HX-CSX601A+XPackage</b:antennaType>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="40.924776414" lon="141.272348968">
+		<ele>92.8507</ele>
+		<time>2024-10-24T10:29:37.699+09:00</time>
+		<geoidheight>36.0133</geoidheight>
+		<name>r38</name>
+		<cmt>Raw-data lat=40.924776414 lon=141.272348968 ellipsoidHeight=128.864 Measurement_time_sec=10</cmt>
+		<fix>dgps</fix>
+		<sat>25</sat>
+		<hdop>0.53</hdop>
+		<vdop>1.020588</vdop>
+		<pdop>1.15</pdop>
+		<extensions>
+			<b:pointNumber>38</b:pointNumber>
+			<b:coordGenaration>The current</b:coordGenaration>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2024-10-24T10:29:28.699</b:starttime>
+				<b:endtime>2024-10-24T10:29:37.699</b:endtime>
+				<b:epochs>10</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.3459</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.1137</b:stddevHeightMeter>
+				<b:lastHacc>0.213</b:lastHacc>
+				<b:lastVacc>0.389</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.000</b:tiltAntHeight>
+				<b:antennaHeightNote>2.000</b:antennaHeightNote>
+				<b:antennaHeightConst>0.200</b:antennaHeightConst>
+				<b:antennaHeightMesure>1.800</b:antennaHeightMesure>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>RWS.DC03 HPG 1.32</b:receiverName>
+				<b:antennaType>HX-CSX601A+XPackage</b:antennaType>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="40.924881316" lon="141.272242456">
+		<ele>89.6258</ele>
+		<time>2024-10-24T10:30:35.899+09:00</time>
+		<geoidheight>36.0132</geoidheight>
+		<name>r1</name>
+		<cmt>Raw-data lat=40.924881316 lon=141.272242456 ellipsoidHeight=125.639 Measurement_time_sec=15</cmt>
+		<fix>dgps</fix>
+		<sat>25</sat>
+		<hdop>0.53</hdop>
+		<vdop>1.031843</vdop>
+		<pdop>1.16</pdop>
+		<extensions>
+			<b:pointNumber>1</b:pointNumber>
+			<b:coordGenaration>The current</b:coordGenaration>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2024-10-24T10:30:21.899</b:starttime>
+				<b:endtime>2024-10-24T10:30:35.899</b:endtime>
+				<b:epochs>15</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.1974</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.2943</b:stddevHeightMeter>
+				<b:lastHacc>0.235</b:lastHacc>
+				<b:lastVacc>0.393</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.000</b:tiltAntHeight>
+				<b:antennaHeightNote>2.000</b:antennaHeightNote>
+				<b:antennaHeightConst>0.200</b:antennaHeightConst>
+				<b:antennaHeightMesure>1.800</b:antennaHeightMesure>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>RWS.DC03 HPG 1.32</b:receiverName>
+				<b:antennaType>HX-CSX601A+XPackage</b:antennaType>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="40.924877775" lon="141.271945113">
+		<ele>89.0741</ele>
+		<time>2024-10-24T10:31:59.000+09:00</time>
+		<geoidheight>36.0139</geoidheight>
+		<name>r2</name>
+		<cmt>Raw-data lat=40.924877775 lon=141.271945113 ellipsoidHeight=125.088 Measurement_time_sec=15</cmt>
+		<fix>dgps</fix>
+		<sat>25</sat>
+		<hdop>0.56</hdop>
+		<vdop>1.1063453</vdop>
+		<pdop>1.24</pdop>
+		<extensions>
+			<b:pointNumber>2</b:pointNumber>
+			<b:coordGenaration>The current</b:coordGenaration>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2024-10-24T10:31:45.000</b:starttime>
+				<b:endtime>2024-10-24T10:31:59.000</b:endtime>
+				<b:epochs>15</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.3195</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.1275</b:stddevHeightMeter>
+				<b:lastHacc>0.241</b:lastHacc>
+				<b:lastVacc>0.371</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.000</b:tiltAntHeight>
+				<b:antennaHeightNote>2.000</b:antennaHeightNote>
+				<b:antennaHeightConst>0.200</b:antennaHeightConst>
+				<b:antennaHeightMesure>1.800</b:antennaHeightMesure>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>RWS.DC03 HPG 1.32</b:receiverName>
+				<b:antennaType>HX-CSX601A+XPackage</b:antennaType>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="40.924846213" lon="141.271520828">
+		<ele>93.9401</ele>
+		<time>2024-10-24T10:34:43.199+09:00</time>
+		<geoidheight>36.0149</geoidheight>
+		<name>r3</name>
+		<cmt>Raw-data lat=40.924846213 lon=141.271520828 ellipsoidHeight=129.955 Measurement_time_sec=15</cmt>
+		<fix>dgps</fix>
+		<sat>25</sat>
+		<hdop>0.53</hdop>
+		<vdop>1.031843</vdop>
+		<pdop>1.16</pdop>
+		<extensions>
+			<b:pointNumber>3</b:pointNumber>
+			<b:coordGenaration>The current</b:coordGenaration>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2024-10-24T10:34:29.199</b:starttime>
+				<b:endtime>2024-10-24T10:34:43.199</b:endtime>
+				<b:epochs>15</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.2701</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.3239</b:stddevHeightMeter>
+				<b:lastHacc>0.237</b:lastHacc>
+				<b:lastVacc>0.435</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.000</b:tiltAntHeight>
+				<b:antennaHeightNote>2.000</b:antennaHeightNote>
+				<b:antennaHeightConst>0.200</b:antennaHeightConst>
+				<b:antennaHeightMesure>1.800</b:antennaHeightMesure>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>RWS.DC03 HPG 1.32</b:receiverName>
+				<b:antennaType>HX-CSX601A+XPackage</b:antennaType>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="40.924809528" lon="141.271213982">
+		<ele>92.2542</ele>
+		<time>2024-10-24T10:36:20.499+09:00</time>
+		<geoidheight>36.0158</geoidheight>
+		<name>r4</name>
+		<cmt>Raw-data lat=40.924809528 lon=141.271213982 ellipsoidHeight=128.27 Measurement_time_sec=15</cmt>
+		<fix>dgps</fix>
+		<sat>25</sat>
+		<hdop>0.53</hdop>
+		<vdop>1.031843</vdop>
+		<pdop>1.16</pdop>
+		<extensions>
+			<b:pointNumber>4</b:pointNumber>
+			<b:coordGenaration>The current</b:coordGenaration>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2024-10-24T10:36:06.499</b:starttime>
+				<b:endtime>2024-10-24T10:36:20.499</b:endtime>
+				<b:epochs>15</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.7715</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.5046</b:stddevHeightMeter>
+				<b:lastHacc>0.329</b:lastHacc>
+				<b:lastVacc>0.619</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.000</b:tiltAntHeight>
+				<b:antennaHeightNote>2.000</b:antennaHeightNote>
+				<b:antennaHeightConst>0.200</b:antennaHeightConst>
+				<b:antennaHeightMesure>1.800</b:antennaHeightMesure>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>RWS.DC03 HPG 1.32</b:receiverName>
+				<b:antennaType>HX-CSX601A+XPackage</b:antennaType>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="40.924802409" lon="141.27089566">
+		<ele>96.5075</ele>
+		<time>2024-10-24T10:37:14.900+09:00</time>
+		<geoidheight>36.0165</geoidheight>
+		<name>r5</name>
+		<cmt>Raw-data lat=40.924802409 lon=141.27089566 ellipsoidHeight=132.524 Measurement_time_sec=15</cmt>
+		<fix>dgps</fix>
+		<sat>24</sat>
+		<hdop>0.55</hdop>
+		<vdop>1.0439827</vdop>
+		<pdop>1.18</pdop>
+		<extensions>
+			<b:pointNumber>5</b:pointNumber>
+			<b:coordGenaration>The current</b:coordGenaration>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2024-10-24T10:37:00.900</b:starttime>
+				<b:endtime>2024-10-24T10:37:14.900</b:endtime>
+				<b:epochs>15</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.7848</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.7612</b:stddevHeightMeter>
+				<b:lastHacc>0.292</b:lastHacc>
+				<b:lastVacc>0.503</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.000</b:tiltAntHeight>
+				<b:antennaHeightNote>2.000</b:antennaHeightNote>
+				<b:antennaHeightConst>0.200</b:antennaHeightConst>
+				<b:antennaHeightMesure>1.800</b:antennaHeightMesure>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>RWS.DC03 HPG 1.32</b:receiverName>
+				<b:antennaType>HX-CSX601A+XPackage</b:antennaType>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="40.924804422" lon="141.270584492">
+		<ele>89.1877</ele>
+		<time>2024-10-24T10:38:20.500+09:00</time>
+		<geoidheight>36.0173</geoidheight>
+		<name>r6</name>
+		<cmt>Raw-data lat=40.924804422 lon=141.270584492 ellipsoidHeight=125.205 Measurement_time_sec=15</cmt>
+		<fix>dgps</fix>
+		<sat>25</sat>
+		<hdop>0.55</hdop>
+		<vdop>1.0439827</vdop>
+		<pdop>1.18</pdop>
+		<extensions>
+			<b:pointNumber>6</b:pointNumber>
+			<b:coordGenaration>The current</b:coordGenaration>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2024-10-24T10:38:06.500</b:starttime>
+				<b:endtime>2024-10-24T10:38:20.500</b:endtime>
+				<b:epochs>15</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.2829</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.7041</b:stddevHeightMeter>
+				<b:lastHacc>0.267</b:lastHacc>
+				<b:lastVacc>0.453</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.000</b:tiltAntHeight>
+				<b:antennaHeightNote>2.000</b:antennaHeightNote>
+				<b:antennaHeightConst>0.200</b:antennaHeightConst>
+				<b:antennaHeightMesure>1.800</b:antennaHeightMesure>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>RWS.DC03 HPG 1.32</b:receiverName>
+				<b:antennaType>HX-CSX601A+XPackage</b:antennaType>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="40.924765783" lon="141.270420592">
+		<ele>93.8762</ele>
+		<time>2024-10-24T10:39:16.800+09:00</time>
+		<geoidheight>36.0178</geoidheight>
+		<name>r7</name>
+		<cmt>Raw-data lat=40.924765783 lon=141.270420592 ellipsoidHeight=129.894 Measurement_time_sec=15</cmt>
+		<fix>dgps</fix>
+		<sat>25</sat>
+		<hdop>0.53</hdop>
+		<vdop>1.031843</vdop>
+		<pdop>1.16</pdop>
+		<extensions>
+			<b:pointNumber>7</b:pointNumber>
+			<b:coordGenaration>The current</b:coordGenaration>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2024-10-24T10:39:02.800</b:starttime>
+				<b:endtime>2024-10-24T10:39:16.800</b:endtime>
+				<b:epochs>15</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.2944</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.1045</b:stddevHeightMeter>
+				<b:lastHacc>0.2</b:lastHacc>
+				<b:lastVacc>0.382</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.000</b:tiltAntHeight>
+				<b:antennaHeightNote>2.000</b:antennaHeightNote>
+				<b:antennaHeightConst>0.200</b:antennaHeightConst>
+				<b:antennaHeightMesure>1.800</b:antennaHeightMesure>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>RWS.DC03 HPG 1.32</b:receiverName>
+				<b:antennaType>HX-CSX601A+XPackage</b:antennaType>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="40.924740398" lon="141.27018738">
+		<ele>92.2426</ele>
+		<time>2024-10-24T10:40:20.900+09:00</time>
+		<geoidheight>36.0184</geoidheight>
+		<name>r8</name>
+		<cmt>Raw-data lat=40.924740398 lon=141.27018738 ellipsoidHeight=128.261 Measurement_time_sec=15</cmt>
+		<fix>dgps</fix>
+		<sat>25</sat>
+		<hdop>0.54</hdop>
+		<vdop>1.026645</vdop>
+		<pdop>1.16</pdop>
+		<extensions>
+			<b:pointNumber>8</b:pointNumber>
+			<b:coordGenaration>The current</b:coordGenaration>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2024-10-24T10:40:06.900</b:starttime>
+				<b:endtime>2024-10-24T10:40:20.900</b:endtime>
+				<b:epochs>15</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.3891</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.0992</b:stddevHeightMeter>
+				<b:lastHacc>0.264</b:lastHacc>
+				<b:lastVacc>0.408</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.000</b:tiltAntHeight>
+				<b:antennaHeightNote>2.000</b:antennaHeightNote>
+				<b:antennaHeightConst>0.200</b:antennaHeightConst>
+				<b:antennaHeightMesure>1.800</b:antennaHeightMesure>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>RWS.DC03 HPG 1.32</b:receiverName>
+				<b:antennaType>HX-CSX601A+XPackage</b:antennaType>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="40.924722857" lon="141.269881248">
+		<ele>89.5308</ele>
+		<time>2024-10-24T10:41:36.700+09:00</time>
+		<geoidheight>36.0192</geoidheight>
+		<name>r9</name>
+		<cmt>Raw-data lat=40.924722857 lon=141.269881248 ellipsoidHeight=125.55 Measurement_time_sec=15</cmt>
+		<fix>dgps</fix>
+		<sat>25</sat>
+		<hdop>0.54</hdop>
+		<vdop>1.0153325</vdop>
+		<pdop>1.15</pdop>
+		<extensions>
+			<b:pointNumber>9</b:pointNumber>
+			<b:coordGenaration>The current</b:coordGenaration>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2024-10-24T10:41:22.700</b:starttime>
+				<b:endtime>2024-10-24T10:41:36.700</b:endtime>
+				<b:epochs>15</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.3432</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.1452</b:stddevHeightMeter>
+				<b:lastHacc>0.225</b:lastHacc>
+				<b:lastVacc>0.368</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.000</b:tiltAntHeight>
+				<b:antennaHeightNote>2.000</b:antennaHeightNote>
+				<b:antennaHeightConst>0.200</b:antennaHeightConst>
+				<b:antennaHeightMesure>1.800</b:antennaHeightMesure>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>RWS.DC03 HPG 1.32</b:receiverName>
+				<b:antennaType>HX-CSX601A+XPackage</b:antennaType>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="40.924662315" lon="141.269584028">
+		<ele>89.4119</ele>
+		<time>2024-10-24T10:43:00.800+09:00</time>
+		<geoidheight>36.0201</geoidheight>
+		<name>r10</name>
+		<cmt>Raw-data lat=40.924662315 lon=141.269584028 ellipsoidHeight=125.432 Measurement_time_sec=15</cmt>
+		<fix>dgps</fix>
+		<sat>25</sat>
+		<hdop>0.54</hdop>
+		<vdop>1.0153325</vdop>
+		<pdop>1.15</pdop>
+		<extensions>
+			<b:pointNumber>10</b:pointNumber>
+			<b:coordGenaration>The current</b:coordGenaration>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2024-10-24T10:42:46.800</b:starttime>
+				<b:endtime>2024-10-24T10:43:00.800</b:endtime>
+				<b:epochs>15</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.3886</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.4077</b:stddevHeightMeter>
+				<b:lastHacc>0.238</b:lastHacc>
+				<b:lastVacc>0.398</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.000</b:tiltAntHeight>
+				<b:antennaHeightNote>2.000</b:antennaHeightNote>
+				<b:antennaHeightConst>0.200</b:antennaHeightConst>
+				<b:antennaHeightMesure>1.800</b:antennaHeightMesure>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>RWS.DC03 HPG 1.32</b:receiverName>
+				<b:antennaType>HX-CSX601A+XPackage</b:antennaType>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="40.924611106" lon="141.269274959">
+		<ele>86.9420</ele>
+		<time>2024-10-24T10:44:14.500+09:00</time>
+		<geoidheight>36.0210</geoidheight>
+		<name>r11</name>
+		<cmt>Raw-data lat=40.924611106 lon=141.269274959 ellipsoidHeight=122.963 Measurement_time_sec=15</cmt>
+		<fix>dgps</fix>
+		<sat>25</sat>
+		<hdop>0.54</hdop>
+		<vdop>1.0153325</vdop>
+		<pdop>1.15</pdop>
+		<extensions>
+			<b:pointNumber>11</b:pointNumber>
+			<b:coordGenaration>The current</b:coordGenaration>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2024-10-24T10:44:00.500</b:starttime>
+				<b:endtime>2024-10-24T10:44:14.500</b:endtime>
+				<b:epochs>15</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.4834</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.6018</b:stddevHeightMeter>
+				<b:lastHacc>0.218</b:lastHacc>
+				<b:lastVacc>0.389</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.000</b:tiltAntHeight>
+				<b:antennaHeightNote>2.000</b:antennaHeightNote>
+				<b:antennaHeightConst>0.200</b:antennaHeightConst>
+				<b:antennaHeightMesure>1.800</b:antennaHeightMesure>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>RWS.DC03 HPG 1.32</b:receiverName>
+				<b:antennaType>HX-CSX601A+XPackage</b:antennaType>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="40.924584593" lon="141.268937317">
+		<ele>87.3542</ele>
+		<time>2024-10-24T10:45:21.500+09:00</time>
+		<geoidheight>36.0218</geoidheight>
+		<name>r12</name>
+		<cmt>Raw-data lat=40.924584593 lon=141.268937317 ellipsoidHeight=123.376 Measurement_time_sec=15</cmt>
+		<fix>dgps</fix>
+		<sat>25</sat>
+		<hdop>0.54</hdop>
+		<vdop>1.0039921</vdop>
+		<pdop>1.14</pdop>
+		<extensions>
+			<b:pointNumber>12</b:pointNumber>
+			<b:coordGenaration>The current</b:coordGenaration>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2024-10-24T10:45:07.500</b:starttime>
+				<b:endtime>2024-10-24T10:45:21.500</b:endtime>
+				<b:epochs>15</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.5693</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.0981</b:stddevHeightMeter>
+				<b:lastHacc>0.244</b:lastHacc>
+				<b:lastVacc>0.388</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.000</b:tiltAntHeight>
+				<b:antennaHeightNote>2.000</b:antennaHeightNote>
+				<b:antennaHeightConst>0.200</b:antennaHeightConst>
+				<b:antennaHeightMesure>1.800</b:antennaHeightMesure>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>RWS.DC03 HPG 1.32</b:receiverName>
+				<b:antennaType>HX-CSX601A+XPackage</b:antennaType>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="40.924533796" lon="141.268625367">
+		<ele>88.4963</ele>
+		<time>2024-10-24T10:46:22.700+09:00</time>
+		<geoidheight>36.0227</geoidheight>
+		<name>r13</name>
+		<cmt>Raw-data lat=40.924533796 lon=141.268625367 ellipsoidHeight=124.519 Measurement_time_sec=15</cmt>
+		<fix>dgps</fix>
+		<sat>25</sat>
+		<hdop>0.54</hdop>
+		<vdop>1.0039921</vdop>
+		<pdop>1.14</pdop>
+		<extensions>
+			<b:pointNumber>13</b:pointNumber>
+			<b:coordGenaration>The current</b:coordGenaration>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2024-10-24T10:46:08.700</b:starttime>
+				<b:endtime>2024-10-24T10:46:22.700</b:endtime>
+				<b:epochs>15</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.5877</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.0876</b:stddevHeightMeter>
+				<b:lastHacc>0.226</b:lastHacc>
+				<b:lastVacc>0.392</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.000</b:tiltAntHeight>
+				<b:antennaHeightNote>2.000</b:antennaHeightNote>
+				<b:antennaHeightConst>0.200</b:antennaHeightConst>
+				<b:antennaHeightMesure>1.800</b:antennaHeightMesure>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>RWS.DC03 HPG 1.32</b:receiverName>
+				<b:antennaType>HX-CSX601A+XPackage</b:antennaType>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="40.924504569" lon="141.268483311">
+		<ele>86.6958</ele>
+		<time>2024-10-24T10:47:13.200+09:00</time>
+		<geoidheight>36.0232</geoidheight>
+		<name>r14</name>
+		<cmt>Raw-data lat=40.924504569 lon=141.268483311 ellipsoidHeight=122.719 Measurement_time_sec=15</cmt>
+		<fix>dgps</fix>
+		<sat>25</sat>
+		<hdop>0.54</hdop>
+		<vdop>1.0039921</vdop>
+		<pdop>1.14</pdop>
+		<extensions>
+			<b:pointNumber>14</b:pointNumber>
+			<b:coordGenaration>The current</b:coordGenaration>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2024-10-24T10:46:59.200</b:starttime>
+				<b:endtime>2024-10-24T10:47:13.200</b:endtime>
+				<b:epochs>15</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.2775</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.3315</b:stddevHeightMeter>
+				<b:lastHacc>0.22</b:lastHacc>
+				<b:lastVacc>0.384</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.000</b:tiltAntHeight>
+				<b:antennaHeightNote>2.000</b:antennaHeightNote>
+				<b:antennaHeightConst>0.200</b:antennaHeightConst>
+				<b:antennaHeightMesure>1.800</b:antennaHeightMesure>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>RWS.DC03 HPG 1.32</b:receiverName>
+				<b:antennaType>HX-CSX601A+XPackage</b:antennaType>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="40.924325813" lon="141.268439684">
+		<ele>80.9251</ele>
+		<time>2024-10-24T10:48:33.200+09:00</time>
+		<geoidheight>36.0239</geoidheight>
+		<name>r15</name>
+		<cmt>Raw-data lat=40.924325813 lon=141.268439684 ellipsoidHeight=116.949 Measurement_time_sec=15</cmt>
+		<fix>dgps</fix>
+		<sat>25</sat>
+		<hdop>0.54</hdop>
+		<vdop>0.99262273</vdop>
+		<pdop>1.13</pdop>
+		<extensions>
+			<b:pointNumber>15</b:pointNumber>
+			<b:coordGenaration>The current</b:coordGenaration>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2024-10-24T10:48:19.200</b:starttime>
+				<b:endtime>2024-10-24T10:48:33.200</b:endtime>
+				<b:epochs>15</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.4006</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.1507</b:stddevHeightMeter>
+				<b:lastHacc>0.233</b:lastHacc>
+				<b:lastVacc>0.374</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.000</b:tiltAntHeight>
+				<b:antennaHeightNote>2.000</b:antennaHeightNote>
+				<b:antennaHeightConst>0.200</b:antennaHeightConst>
+				<b:antennaHeightMesure>1.800</b:antennaHeightMesure>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>RWS.DC03 HPG 1.32</b:receiverName>
+				<b:antennaType>HX-CSX601A+XPackage</b:antennaType>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="40.924265252" lon="141.268679491">
+		<ele>81.0494</ele>
+		<time>2024-10-24T10:49:51.700+09:00</time>
+		<geoidheight>36.0236</geoidheight>
+		<name>r16</name>
+		<cmt>Raw-data lat=40.924265252 lon=141.268679491 ellipsoidHeight=117.073 Measurement_time_sec=15</cmt>
+		<fix>dgps</fix>
+		<sat>24</sat>
+		<hdop>0.57</hdop>
+		<vdop>1.1113505</vdop>
+		<pdop>1.24</pdop>
+		<extensions>
+			<b:pointNumber>16</b:pointNumber>
+			<b:coordGenaration>The current</b:coordGenaration>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2024-10-24T10:49:37.700</b:starttime>
+				<b:endtime>2024-10-24T10:49:51.700</b:endtime>
+				<b:epochs>15</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.5118</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.661</b:stddevHeightMeter>
+				<b:lastHacc>0.238</b:lastHacc>
+				<b:lastVacc>0.414</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.000</b:tiltAntHeight>
+				<b:antennaHeightNote>2.000</b:antennaHeightNote>
+				<b:antennaHeightConst>0.200</b:antennaHeightConst>
+				<b:antennaHeightMesure>1.800</b:antennaHeightMesure>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>RWS.DC03 HPG 1.32</b:receiverName>
+				<b:antennaType>HX-CSX601A+XPackage</b:antennaType>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="40.924229704" lon="141.268945127">
+		<ele>81.5859</ele>
+		<time>2024-10-24T10:51:12.100+09:00</time>
+		<geoidheight>36.0231</geoidheight>
+		<name>r17</name>
+		<cmt>Raw-data lat=40.924229704 lon=141.268945127 ellipsoidHeight=117.609 Measurement_time_sec=15</cmt>
+		<fix>dgps</fix>
+		<sat>25</sat>
+		<hdop>0.54</hdop>
+		<vdop>0.98122376</vdop>
+		<pdop>1.12</pdop>
+		<extensions>
+			<b:pointNumber>17</b:pointNumber>
+			<b:coordGenaration>The current</b:coordGenaration>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2024-10-24T10:50:58.100</b:starttime>
+				<b:endtime>2024-10-24T10:51:12.100</b:endtime>
+				<b:epochs>15</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.2651</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.3808</b:stddevHeightMeter>
+				<b:lastHacc>0.259</b:lastHacc>
+				<b:lastVacc>0.464</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.000</b:tiltAntHeight>
+				<b:antennaHeightNote>2.000</b:antennaHeightNote>
+				<b:antennaHeightConst>0.200</b:antennaHeightConst>
+				<b:antennaHeightMesure>1.800</b:antennaHeightMesure>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>RWS.DC03 HPG 1.32</b:receiverName>
+				<b:antennaType>HX-CSX601A+XPackage</b:antennaType>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="40.92423595" lon="141.269219671">
+		<ele>79.8985</ele>
+		<time>2024-10-24T10:52:19.400+09:00</time>
+		<geoidheight>36.0225</geoidheight>
+		<name>r18</name>
+		<cmt>Raw-data lat=40.92423595 lon=141.269219671 ellipsoidHeight=115.921 Measurement_time_sec=15</cmt>
+		<fix>dgps</fix>
+		<sat>23</sat>
+		<hdop>0.6</hdop>
+		<vdop>1.164517</vdop>
+		<pdop>1.31</pdop>
+		<extensions>
+			<b:pointNumber>18</b:pointNumber>
+			<b:coordGenaration>The current</b:coordGenaration>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2024-10-24T10:52:05.400</b:starttime>
+				<b:endtime>2024-10-24T10:52:19.400</b:endtime>
+				<b:epochs>15</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.3095</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.2197</b:stddevHeightMeter>
+				<b:lastHacc>0.256</b:lastHacc>
+				<b:lastVacc>0.472</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.000</b:tiltAntHeight>
+				<b:antennaHeightNote>2.000</b:antennaHeightNote>
+				<b:antennaHeightConst>0.200</b:antennaHeightConst>
+				<b:antennaHeightMesure>1.800</b:antennaHeightMesure>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>RWS.DC03 HPG 1.32</b:receiverName>
+				<b:antennaType>HX-CSX601A+XPackage</b:antennaType>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="40.924180299" lon="141.269466568">
+		<ele>79.5109</ele>
+		<time>2024-10-24T10:53:39.800+09:00</time>
+		<geoidheight>36.0221</geoidheight>
+		<name>r19</name>
+		<cmt>Raw-data lat=40.924180299 lon=141.269466568 ellipsoidHeight=115.533 Measurement_time_sec=15</cmt>
+		<fix>dgps</fix>
+		<sat>24</sat>
+		<hdop>0.57</hdop>
+		<vdop>1.0390862</vdop>
+		<pdop>1.19</pdop>
+		<extensions>
+			<b:pointNumber>19</b:pointNumber>
+			<b:coordGenaration>The current</b:coordGenaration>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2024-10-24T10:53:25.800</b:starttime>
+				<b:endtime>2024-10-24T10:53:39.800</b:endtime>
+				<b:epochs>15</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.2466</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.2618</b:stddevHeightMeter>
+				<b:lastHacc>0.232</b:lastHacc>
+				<b:lastVacc>0.419</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.000</b:tiltAntHeight>
+				<b:antennaHeightNote>2.000</b:antennaHeightNote>
+				<b:antennaHeightConst>0.200</b:antennaHeightConst>
+				<b:antennaHeightMesure>1.800</b:antennaHeightMesure>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>RWS.DC03 HPG 1.32</b:receiverName>
+				<b:antennaType>HX-CSX601A+XPackage</b:antennaType>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="40.924086523" lon="141.269513667">
+		<ele>73.6777</ele>
+		<time>2024-10-24T10:54:27.900+09:00</time>
+		<geoidheight>36.0223</geoidheight>
+		<name>r20</name>
+		<cmt>Raw-data lat=40.924086523 lon=141.269513667 ellipsoidHeight=109.7 Measurement_time_sec=15</cmt>
+		<fix>dgps</fix>
+		<sat>24</sat>
+		<hdop>0.57</hdop>
+		<vdop>1.0446053</vdop>
+		<pdop>1.19</pdop>
+		<extensions>
+			<b:pointNumber>20</b:pointNumber>
+			<b:coordGenaration>The current</b:coordGenaration>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2024-10-24T10:54:13.900</b:starttime>
+				<b:endtime>2024-10-24T10:54:27.900</b:endtime>
+				<b:epochs>15</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.2913</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.1064</b:stddevHeightMeter>
+				<b:lastHacc>0.223</b:lastHacc>
+				<b:lastVacc>0.44</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.000</b:tiltAntHeight>
+				<b:antennaHeightNote>2.000</b:antennaHeightNote>
+				<b:antennaHeightConst>0.200</b:antennaHeightConst>
+				<b:antennaHeightMesure>1.800</b:antennaHeightMesure>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>RWS.DC03 HPG 1.32</b:receiverName>
+				<b:antennaType>HX-CSX601A+XPackage</b:antennaType>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="40.924024152" lon="141.269831809">
+		<ele>73.9972</ele>
+		<time>2024-10-24T10:55:53.300+09:00</time>
+		<geoidheight>36.0218</geoidheight>
+		<name>r21</name>
+		<cmt>Raw-data lat=40.924024152 lon=141.269831809 ellipsoidHeight=110.019 Measurement_time_sec=15</cmt>
+		<fix>dgps</fix>
+		<sat>22</sat>
+		<hdop>0.6</hdop>
+		<vdop>1.141972</vdop>
+		<pdop>1.29</pdop>
+		<extensions>
+			<b:pointNumber>21</b:pointNumber>
+			<b:coordGenaration>The current</b:coordGenaration>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2024-10-24T10:55:39.300</b:starttime>
+				<b:endtime>2024-10-24T10:55:53.300</b:endtime>
+				<b:epochs>15</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.2292</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.3313</b:stddevHeightMeter>
+				<b:lastHacc>0.234</b:lastHacc>
+				<b:lastVacc>0.43</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.000</b:tiltAntHeight>
+				<b:antennaHeightNote>2.000</b:antennaHeightNote>
+				<b:antennaHeightConst>0.200</b:antennaHeightConst>
+				<b:antennaHeightMesure>1.800</b:antennaHeightMesure>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>RWS.DC03 HPG 1.32</b:receiverName>
+				<b:antennaType>HX-CSX601A+XPackage</b:antennaType>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="40.924037576" lon="141.27014385">
+		<ele>77.6799</ele>
+		<time>2024-10-24T10:57:41.600+09:00</time>
+		<geoidheight>36.0211</geoidheight>
+		<name>r22</name>
+		<cmt>Raw-data lat=40.924037576 lon=141.27014385 ellipsoidHeight=113.701 Measurement_time_sec=15</cmt>
+		<fix>dgps</fix>
+		<sat>24</sat>
+		<hdop>0.57</hdop>
+		<vdop>1.0217631</vdop>
+		<pdop>1.17</pdop>
+		<extensions>
+			<b:pointNumber>22</b:pointNumber>
+			<b:coordGenaration>The current</b:coordGenaration>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2024-10-24T10:57:27.600</b:starttime>
+				<b:endtime>2024-10-24T10:57:41.600</b:endtime>
+				<b:epochs>15</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.2384</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.1704</b:stddevHeightMeter>
+				<b:lastHacc>0.229</b:lastHacc>
+				<b:lastVacc>0.393</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.000</b:tiltAntHeight>
+				<b:antennaHeightNote>2.000</b:antennaHeightNote>
+				<b:antennaHeightConst>0.200</b:antennaHeightConst>
+				<b:antennaHeightMesure>1.800</b:antennaHeightMesure>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>RWS.DC03 HPG 1.32</b:receiverName>
+				<b:antennaType>HX-CSX601A+XPackage</b:antennaType>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="40.924141376" lon="141.270267622">
+		<ele>81.9026</ele>
+		<time>2024-10-24T10:59:15.900+09:00</time>
+		<geoidheight>36.0204</geoidheight>
+		<name>r23</name>
+		<cmt>Raw-data lat=40.924141376 lon=141.270267622 ellipsoidHeight=117.923 Measurement_time_sec=15</cmt>
+		<fix>dgps</fix>
+		<sat>24</sat>
+		<hdop>0.57</hdop>
+		<vdop>1.010297</vdop>
+		<pdop>1.16</pdop>
+		<extensions>
+			<b:pointNumber>23</b:pointNumber>
+			<b:coordGenaration>The current</b:coordGenaration>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2024-10-24T10:59:01.900</b:starttime>
+				<b:endtime>2024-10-24T10:59:15.900</b:endtime>
+				<b:epochs>15</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.1046</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.1573</b:stddevHeightMeter>
+				<b:lastHacc>0.266</b:lastHacc>
+				<b:lastVacc>0.443</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.000</b:tiltAntHeight>
+				<b:antennaHeightNote>2.000</b:antennaHeightNote>
+				<b:antennaHeightConst>0.200</b:antennaHeightConst>
+				<b:antennaHeightMesure>1.800</b:antennaHeightMesure>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>RWS.DC03 HPG 1.32</b:receiverName>
+				<b:antennaType>HX-CSX601A+XPackage</b:antennaType>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="40.924085806" lon="141.270492271">
+	<ele>83.1339</ele>
+	<time>2024-10-24T11:00:55.900+09:00</time>
+	<geoidheight>36.0201</geoidheight>
+	<name>r24</name>
+	<cmt>Raw-data lat=40.924085806 lon=141.270492271 ellipsoidHeight=119.154 Measurement_time_sec=15</cmt>
+	<fix>dgps</fix>
+	<sat>24</sat>
+	<hdop>0.57</hdop>
+	<vdop>0.99879926</vdop>
+	<pdop>1.15</pdop>
+	<extensions>
+		<b:pointNumber>24</b:pointNumber>
+		<b:coordGenaration>The current</b:coordGenaration>
+		<b:measurement>
+			<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+			<b:starttime>2024-10-24T11:00:41.900</b:starttime>
+			<b:endtime>2024-10-24T11:00:55.900</b:endtime>
+			<b:epochs>15</b:epochs>
+			<b:epochInterval>1.0</b:epochInterval>
+			<b:satMinEle>15.0</b:satMinEle>
+			<b:stddevDistanceMeter>0.2135</b:stddevDistanceMeter>
+			<b:stddevHeightMeter>0.5439</b:stddevHeightMeter>
+			<b:lastHacc>0.258</b:lastHacc>
+			<b:lastVacc>0.469</b:lastVacc>
+			<b:fixMode>3D DGNSS</b:fixMode>
+			<b:enableTiltCorrection>false</b:enableTiltCorrection>
+			<b:tiltAntHeight>0.000</b:tiltAntHeight>
+			<b:antennaHeightNote>2.000</b:antennaHeightNote>
+			<b:antennaHeightConst>0.200</b:antennaHeightConst>
+			<b:antennaHeightMesure>1.800</b:antennaHeightMesure>
+			<b:group>0</b:group>
+			<b:index>0</b:index>
+			<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+			<b:receiverName>RWS.DC03 HPG 1.32</b:receiverName>
+			<b:antennaType>HX-CSX601A+XPackage</b:antennaType>
+		</b:measurement>
+	</extensions>
+</wpt>
+<wpt lat="40.924108937" lon="141.270836382">
+	<ele>88.2598</ele>
+	<time>2024-10-24T11:02:27.100+09:00</time>
+	<geoidheight>36.0192</geoidheight>
+	<name>r25</name>
+	<cmt>Raw-data lat=40.924108937 lon=141.270836382 ellipsoidHeight=124.279 Measurement_time_sec=15</cmt>
+	<fix>dgps</fix>
+	<sat>22</sat>
+	<hdop>0.6</hdop>
+	<vdop>1.0965856</vdop>
+	<pdop>1.25</pdop>
+	<extensions>
+		<b:pointNumber>25</b:pointNumber>
+		<b:coordGenaration>The current</b:coordGenaration>
+		<b:measurement>
+			<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+			<b:starttime>2024-10-24T11:02:13.100</b:starttime>
+			<b:endtime>2024-10-24T11:02:27.100</b:endtime>
+			<b:epochs>15</b:epochs>
+			<b:epochInterval>1.0</b:epochInterval>
+			<b:satMinEle>15.0</b:satMinEle>
+			<b:stddevDistanceMeter>0.4168</b:stddevDistanceMeter>
+			<b:stddevHeightMeter>0.6302</b:stddevHeightMeter>
+			<b:lastHacc>0.269</b:lastHacc>
+			<b:lastVacc>0.435</b:lastVacc>
+			<b:fixMode>3D DGNSS</b:fixMode>
+			<b:enableTiltCorrection>false</b:enableTiltCorrection>
+			<b:tiltAntHeight>0.000</b:tiltAntHeight>
+			<b:antennaHeightNote>2.000</b:antennaHeightNote>
+			<b:antennaHeightConst>0.200</b:antennaHeightConst>
+			<b:antennaHeightMesure>1.800</b:antennaHeightMesure>
+			<b:group>0</b:group>
+			<b:index>0</b:index>
+			<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+			<b:receiverName>RWS.DC03 HPG 1.32</b:receiverName>
+			<b:antennaType>HX-CSX601A+XPackage</b:antennaType>
+		</b:measurement>
+	</extensions>
+</wpt>
+<wpt lat="40.924121123" lon="141.271155041">
+	<ele>83.5296</ele>
+	<time>2024-10-24T11:03:43.200+09:00</time>
+	<geoidheight>36.0184</geoidheight>
+	<name>r26</name>
+	<cmt>Raw-data lat=40.924121123 lon=141.271155041 ellipsoidHeight=119.548 Measurement_time_sec=15</cmt>
+	<fix>dgps</fix>
+	<sat>23</sat>
+	<hdop>0.59</hdop>
+	<vdop>1.0449402</vdop>
+	<pdop>1.2</pdop>
+	<extensions>
+		<b:pointNumber>26</b:pointNumber>
+		<b:coordGenaration>The current</b:coordGenaration>
+		<b:measurement>
+			<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+			<b:starttime>2024-10-24T11:03:29.200</b:starttime>
+			<b:endtime>2024-10-24T11:03:43.200</b:endtime>
+			<b:epochs>15</b:epochs>
+			<b:epochInterval>1.0</b:epochInterval>
+			<b:satMinEle>15.0</b:satMinEle>
+			<b:stddevDistanceMeter>0.4341</b:stddevDistanceMeter>
+			<b:stddevHeightMeter>0.0846</b:stddevHeightMeter>
+			<b:lastHacc>0.263</b:lastHacc>
+			<b:lastVacc>0.43</b:lastVacc>
+			<b:fixMode>3D DGNSS</b:fixMode>
+			<b:enableTiltCorrection>false</b:enableTiltCorrection>
+			<b:tiltAntHeight>0.000</b:tiltAntHeight>
+			<b:antennaHeightNote>2.000</b:antennaHeightNote>
+			<b:antennaHeightConst>0.200</b:antennaHeightConst>
+			<b:antennaHeightMesure>1.800</b:antennaHeightMesure>
+			<b:group>0</b:group>
+			<b:index>0</b:index>
+			<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+			<b:receiverName>RWS.DC03 HPG 1.32</b:receiverName>
+			<b:antennaType>HX-CSX601A+XPackage</b:antennaType>
+		</b:measurement>
+	</extensions>
+</wpt>
+<wpt lat="40.924150836" lon="141.271404276">
+	<ele>86.0373</ele>
+	<time>2024-10-24T11:04:41.000+09:00</time>
+	<geoidheight>36.0177</geoidheight>
+	<name>r27</name>
+	<cmt>Raw-data lat=40.924150836 lon=141.271404276 ellipsoidHeight=122.055 Measurement_time_sec=15</cmt>
+	<fix>dgps</fix>
+	<sat>23</sat>
+	<hdop>0.59</hdop>
+	<vdop>1.0449402</vdop>
+	<pdop>1.2</pdop>
+	<extensions>
+		<b:pointNumber>27</b:pointNumber>
+		<b:coordGenaration>The current</b:coordGenaration>
+		<b:measurement>
+			<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+			<b:starttime>2024-10-24T11:04:27.000</b:starttime>
+			<b:endtime>2024-10-24T11:04:41.000</b:endtime>
+			<b:epochs>15</b:epochs>
+			<b:epochInterval>1.0</b:epochInterval>
+			<b:satMinEle>15.0</b:satMinEle>
+			<b:stddevDistanceMeter>0.5056</b:stddevDistanceMeter>
+			<b:stddevHeightMeter>0.1135</b:stddevHeightMeter>
+			<b:lastHacc>0.273</b:lastHacc>
+			<b:lastVacc>0.463</b:lastVacc>
+			<b:fixMode>3D DGNSS</b:fixMode>
+			<b:enableTiltCorrection>false</b:enableTiltCorrection>
+			<b:tiltAntHeight>0.000</b:tiltAntHeight>
+			<b:antennaHeightNote>2.000</b:antennaHeightNote>
+			<b:antennaHeightConst>0.200</b:antennaHeightConst>
+			<b:antennaHeightMesure>1.800</b:antennaHeightMesure>
+			<b:group>0</b:group>
+			<b:index>0</b:index>
+			<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+			<b:receiverName>RWS.DC03 HPG 1.32</b:receiverName>
+			<b:antennaType>HX-CSX601A+XPackage</b:antennaType>
+		</b:measurement>
+	</extensions>
+</wpt>
+<wpt lat="40.924165566" lon="141.271692627">
+	<ele>81.2730</ele>
+	<time>2024-10-24T11:05:47.200+09:00</time>
+	<geoidheight>36.0170</geoidheight>
+	<name>r28</name>
+	<cmt>Raw-data lat=40.924165566 lon=141.271692627 ellipsoidHeight=117.29 Measurement_time_sec=15</cmt>
+	<fix>dgps</fix>
+	<sat>22</sat>
+	<hdop>0.6</hdop>
+	<vdop>1.0737318</vdop>
+	<pdop>1.23</pdop>
+	<extensions>
+		<b:pointNumber>28</b:pointNumber>
+		<b:coordGenaration>The current</b:coordGenaration>
+		<b:measurement>
+			<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+			<b:starttime>2024-10-24T11:05:33.200</b:starttime>
+			<b:endtime>2024-10-24T11:05:47.200</b:endtime>
+			<b:epochs>15</b:epochs>
+			<b:epochInterval>1.0</b:epochInterval>
+			<b:satMinEle>15.0</b:satMinEle>
+			<b:stddevDistanceMeter>0.2934</b:stddevDistanceMeter>
+			<b:stddevHeightMeter>0.6143</b:stddevHeightMeter>
+			<b:lastHacc>0.265</b:lastHacc>
+			<b:lastVacc>0.415</b:lastVacc>
+			<b:fixMode>3D DGNSS</b:fixMode>
+			<b:enableTiltCorrection>false</b:enableTiltCorrection>
+			<b:tiltAntHeight>0.000</b:tiltAntHeight>
+			<b:antennaHeightNote>2.000</b:antennaHeightNote>
+			<b:antennaHeightConst>0.200</b:antennaHeightConst>
+			<b:antennaHeightMesure>1.800</b:antennaHeightMesure>
+			<b:group>0</b:group>
+			<b:index>0</b:index>
+			<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+			<b:receiverName>RWS.DC03 HPG 1.32</b:receiverName>
+			<b:antennaType>HX-CSX601A+XPackage</b:antennaType>
+		</b:measurement>
+	</extensions>
+</wpt>
+<wpt lat="40.924148911" lon="141.272031146">
+	<ele>85.7617</ele>
+	<time>2024-10-24T11:07:19.900+09:00</time>
+	<geoidheight>36.0163</geoidheight>
+	<name>r29</name>
+	<cmt>Raw-data lat=40.924148911 lon=141.272031146 ellipsoidHeight=121.778 Measurement_time_sec=15</cmt>
+	<fix>dgps</fix>
+	<sat>22</sat>
+	<hdop>0.6</hdop>
+	<vdop>1.0622618</vdop>
+	<pdop>1.22</pdop>
+	<extensions>
+		<b:pointNumber>29</b:pointNumber>
+		<b:coordGenaration>The current</b:coordGenaration>
+		<b:measurement>
+			<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+			<b:starttime>2024-10-24T11:07:05.900</b:starttime>
+			<b:endtime>2024-10-24T11:07:19.900</b:endtime>
+			<b:epochs>15</b:epochs>
+			<b:epochInterval>1.0</b:epochInterval>
+			<b:satMinEle>15.0</b:satMinEle>
+			<b:stddevDistanceMeter>0.3375</b:stddevDistanceMeter>
+			<b:stddevHeightMeter>0.5118</b:stddevHeightMeter>
+			<b:lastHacc>0.236</b:lastHacc>
+			<b:lastVacc>0.397</b:lastVacc>
+			<b:fixMode>3D DGNSS</b:fixMode>
+			<b:enableTiltCorrection>false</b:enableTiltCorrection>
+			<b:tiltAntHeight>0.000</b:tiltAntHeight>
+			<b:antennaHeightNote>2.000</b:antennaHeightNote>
+			<b:antennaHeightConst>0.200</b:antennaHeightConst>
+			<b:antennaHeightMesure>1.800</b:antennaHeightMesure>
+			<b:group>0</b:group>
+			<b:index>0</b:index>
+			<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+			<b:receiverName>RWS.DC03 HPG 1.32</b:receiverName>
+			<b:antennaType>HX-CSX601A+XPackage</b:antennaType>
+		</b:measurement>
+	</extensions>
+</wpt>
+<wpt lat="40.923878983" lon="141.272002911">
+	<ele>83.8996</ele>
+	<time>2024-10-24T11:08:25.800+09:00</time>
+	<geoidheight>36.0174</geoidheight>
+	<name>r30</name>
+	<cmt>Raw-data lat=40.923878983 lon=141.272002911 ellipsoidHeight=119.917 Measurement_time_sec=15</cmt>
+	<fix>dgps</fix>
+	<sat>23</sat>
+	<hdop>0.59</hdop>
+	<vdop>1.02191</vdop>
+	<pdop>1.18</pdop>
+	<extensions>
+		<b:pointNumber>30</b:pointNumber>
+		<b:coordGenaration>The current</b:coordGenaration>
+		<b:measurement>
+			<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+			<b:starttime>2024-10-24T11:08:11.800</b:starttime>
+			<b:endtime>2024-10-24T11:08:25.800</b:endtime>
+			<b:epochs>15</b:epochs>
+			<b:epochInterval>1.0</b:epochInterval>
+			<b:satMinEle>15.0</b:satMinEle>
+			<b:stddevDistanceMeter>0.1467</b:stddevDistanceMeter>
+			<b:stddevHeightMeter>0.1763</b:stddevHeightMeter>
+			<b:lastHacc>0.247</b:lastHacc>
+			<b:lastVacc>0.388</b:lastVacc>
+			<b:fixMode>3D DGNSS</b:fixMode>
+			<b:enableTiltCorrection>false</b:enableTiltCorrection>
+			<b:tiltAntHeight>0.000</b:tiltAntHeight>
+			<b:antennaHeightNote>2.000</b:antennaHeightNote>
+			<b:antennaHeightConst>0.200</b:antennaHeightConst>
+			<b:antennaHeightMesure>1.800</b:antennaHeightMesure>
+			<b:group>0</b:group>
+			<b:index>0</b:index>
+			<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+			<b:receiverName>RWS.DC03 HPG 1.32</b:receiverName>
+			<b:antennaType>HX-CSX601A+XPackage</b:antennaType>
+		</b:measurement>
+	</extensions>
+</wpt>
+<wpt lat="40.923627851" lon="141.272155658">
+	<ele>84.2311</ele>
+	<time>2024-10-24T11:09:37.300+09:00</time>
+	<geoidheight>36.0179</geoidheight>
+	<name>r31</name>
+	<cmt>Raw-data lat=40.923627851 lon=141.272155658 ellipsoidHeight=120.249 Measurement_time_sec=15</cmt>
+	<fix>dgps</fix>
+	<sat>23</sat>
+	<hdop>0.59</hdop>
+	<vdop>1.0103465</vdop>
+	<pdop>1.17</pdop>
+	<extensions>
+		<b:pointNumber>31</b:pointNumber>
+		<b:coordGenaration>The current</b:coordGenaration>
+		<b:measurement>
+			<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+			<b:starttime>2024-10-24T11:09:23.300</b:starttime>
+			<b:endtime>2024-10-24T11:09:37.300</b:endtime>
+			<b:epochs>15</b:epochs>
+			<b:epochInterval>1.0</b:epochInterval>
+			<b:satMinEle>15.0</b:satMinEle>
+			<b:stddevDistanceMeter>0.087</b:stddevDistanceMeter>
+			<b:stddevHeightMeter>0.3187</b:stddevHeightMeter>
+			<b:lastHacc>0.257</b:lastHacc>
+			<b:lastVacc>0.408</b:lastVacc>
+			<b:fixMode>3D DGNSS</b:fixMode>
+			<b:enableTiltCorrection>false</b:enableTiltCorrection>
+			<b:tiltAntHeight>0.000</b:tiltAntHeight>
+			<b:antennaHeightNote>2.000</b:antennaHeightNote>
+			<b:antennaHeightConst>0.200</b:antennaHeightConst>
+			<b:antennaHeightMesure>1.800</b:antennaHeightMesure>
+			<b:group>0</b:group>
+			<b:index>0</b:index>
+			<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+			<b:receiverName>RWS.DC03 HPG 1.32</b:receiverName>
+			<b:antennaType>HX-CSX601A+XPackage</b:antennaType>
+		</b:measurement>
+	</extensions>
+</wpt>
+<wpt lat="40.923464399" lon="141.272433417">
+	<ele>80.4221</ele>
+	<time>2024-10-24T11:11:38.499+09:00</time>
+	<geoidheight>36.0179</geoidheight>
+	<name>r32</name>
+	<cmt>Raw-data lat=40.923464399 lon=141.272433417 ellipsoidHeight=116.44 Measurement_time_sec=20</cmt>
+	<fix>dgps</fix>
+	<sat>24</sat>
+	<hdop>0.58</hdop>
+	<vdop>0.9581232</vdop>
+	<pdop>1.12</pdop>
+	<extensions>
+		<b:pointNumber>32</b:pointNumber>
+		<b:coordGenaration>The current</b:coordGenaration>
+		<b:measurement>
+			<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+			<b:starttime>2024-10-24T11:11:19.499</b:starttime>
+			<b:endtime>2024-10-24T11:11:38.499</b:endtime>
+			<b:epochs>20</b:epochs>
+			<b:epochInterval>1.0</b:epochInterval>
+			<b:satMinEle>15.0</b:satMinEle>
+			<b:stddevDistanceMeter>0.1168</b:stddevDistanceMeter>
+			<b:stddevHeightMeter>0.5457</b:stddevHeightMeter>
+			<b:lastHacc>0.248</b:lastHacc>
+			<b:lastVacc>0.427</b:lastVacc>
+			<b:fixMode>3D DGNSS</b:fixMode>
+			<b:enableTiltCorrection>false</b:enableTiltCorrection>
+			<b:tiltAntHeight>0.000</b:tiltAntHeight>
+			<b:antennaHeightNote>2.000</b:antennaHeightNote>
+			<b:antennaHeightConst>0.200</b:antennaHeightConst>
+			<b:antennaHeightMesure>1.800</b:antennaHeightMesure>
+			<b:group>0</b:group>
+			<b:index>0</b:index>
+			<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+			<b:receiverName>RWS.DC03 HPG 1.32</b:receiverName>
+			<b:antennaType>HX-CSX601A+XPackage</b:antennaType>
+		</b:measurement>
+	</extensions>
+</wpt>
+<wpt lat="40.923444016" lon="141.272723872">
+	<ele>77.8497</ele>
+	<time>2024-10-24T11:12:44.399+09:00</time>
+	<geoidheight>36.0173</geoidheight>
+	<name>r33</name>
+	<cmt>Raw-data lat=40.923444016 lon=141.272723872 ellipsoidHeight=113.867 Measurement_time_sec=20</cmt>
+	<fix>dgps</fix>
+	<sat>24</sat>
+	<hdop>0.57</hdop>
+	<vdop>0.9524705</vdop>
+	<pdop>1.11</pdop>
+	<extensions>
+		<b:pointNumber>33</b:pointNumber>
+		<b:coordGenaration>The current</b:coordGenaration>
+		<b:measurement>
+			<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+			<b:starttime>2024-10-24T11:12:25.399</b:starttime>
+			<b:endtime>2024-10-24T11:12:44.399</b:endtime>
+			<b:epochs>20</b:epochs>
+			<b:epochInterval>1.0</b:epochInterval>
+			<b:satMinEle>15.0</b:satMinEle>
+			<b:stddevDistanceMeter>0.4079</b:stddevDistanceMeter>
+			<b:stddevHeightMeter>0.3616</b:stddevHeightMeter>
+			<b:lastHacc>0.212</b:lastHacc>
+			<b:lastVacc>0.367</b:lastVacc>
+			<b:fixMode>3D DGNSS</b:fixMode>
+			<b:enableTiltCorrection>false</b:enableTiltCorrection>
+			<b:tiltAntHeight>0.000</b:tiltAntHeight>
+			<b:antennaHeightNote>2.000</b:antennaHeightNote>
+			<b:antennaHeightConst>0.200</b:antennaHeightConst>
+			<b:antennaHeightMesure>1.800</b:antennaHeightMesure>
+			<b:group>0</b:group>
+			<b:index>0</b:index>
+			<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+			<b:receiverName>RWS.DC03 HPG 1.32</b:receiverName>
+			<b:antennaType>HX-CSX601A+XPackage</b:antennaType>
+		</b:measurement>
+	</extensions>
+</wpt>
+</gpx>
