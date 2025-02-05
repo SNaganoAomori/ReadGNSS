@@ -1,0 +1,344 @@
+formats:
+  datetime_format: "%Y-%m-%d %H:%M:%S"
+  datetime_formats:
+    # Add your custom datetime formats here
+    - "%Y-%m-%dT%H:%M:%S.%f"
+    - "%Y-%m-%d %H:%M:%S"
+    - "%Y/%m/%d %H:%M:%S"
+    - "%Y/%m/%d %H:%M"
+
+  decimal_places:
+    # Number of decimal places to round to for each format
+    mercator: 4
+    geodetic: 11
+
+colors:
+  red: "#dc143c"
+  green: "#008000"
+  blue: "#0000ff"
+  orange: "#ff8c00"
+  limegreen: "#32cd32"
+  skyblue: "#00bfff"
+  pink: "#ff1493"
+  olive: "#008b8b"
+  violet: "#8a2be2"
+  gold: "#ffd700"
+  
+
+spatial_coordinates_system:
+  # Specify the spatial coordinate system
+  JGD2011_R:
+    JPN1: 6669
+    JPN2: 6670
+    JPN3: 6671
+    JPN4: 6672
+    JPN5: 6673
+    JPN6: 6674
+    JPN7: 6675
+    JPN8: 6676
+    JPN9: 6677
+    JPN10: 6678
+    JPN11: 6679
+    JPN12: 6680
+    JPN13: 6681
+    JPN14: 6682
+    JPN15: 6683
+    JPN16: 6684
+    JPN17: 6685
+    JPN18: 6686
+    JPN19: 6687
+    UTM51: 6688
+    UTM52: 6689
+    UTM53: 6690
+    UTM54: 6691
+    UTM55: 6692
+
+columns:
+  use_cols_en:
+    # Specify the columns to be used
+    - "sort_index"
+    - "start"
+    - "end"
+    - "point_name"
+    - "point_number"
+    - "longitude"
+    - "latitude"
+    - "altitude"
+    - "ellipsoid_height"
+    - "geoid_height"
+    - "antenna_height"
+    - "fix"
+    - "fix_mode"
+    - "epochs"
+    - "interval"
+    - "pdop"
+    - "number_of_satellites"
+    - "std_h"
+    - "std_v"
+    - "signals"
+    - "signal_frequencies"
+    - "receiver"
+    - "antenna"
+    - "jgd"
+    - "epsg"
+    - "transformed_y"
+    - "transformed_x"
+  
+  add_cols:
+    signal_frequencies: 
+      en: "signal_frequencies"
+      jp: "周波数"
+    office: 
+      en: "office"
+      jp: "森林管理署"
+    branch_office:
+      en: "branch_office"
+      jp: "森林事務所"
+    local_area:
+      en: "local_area"
+      jp: "国有林"
+    address:
+      en: "address"
+      jp: "林小班"
+    project_year:
+      en: "project_year"
+      jp: "事業年度"
+    project_name:
+      en: "project_name"
+      jp: "事業名"
+    surveyor:
+      en: "surveyor"
+      jp: "測量者"
+    group_name:
+      en: "group_name"
+      jp: "班名"
+    point:
+      en: "point"
+      jp: "測点"
+    label:
+      en: "label"
+      jp: "label"
+    point_size:
+      en: "point_size"
+      jp: "point_size"
+  
+  selects:
+    sort_index: "sort_index"
+    start: "start"
+    end: "end"
+    group_name: "group_name"
+    point: "point"
+    point_name: "point_name"
+    point_number: "point_number"
+    longitude: "longitude"
+    latitude: "latitude"
+    altitude: "altitude"
+    fix_mode: "fix_mode"
+    epochs: "epochs"
+    interval: "interval"
+    pdop: "pdop"
+    number_of_satellites: "number_of_satellites"
+    signals: "signals"
+    signal_frequencies: "signal_frequencies"
+    receiver: "receiver"
+    antenna: "antenna"
+    office: "office"
+    branch_office: "branch_office"
+    local_area: "local_area"
+    address: "address"
+    project_year: "project_year"
+    project_name: "project_name"
+    surveyor: "surveyor"
+
+  statistics:
+    start: 
+      en: "start"
+      jp: "開始"
+      stats: "min"
+    end: 
+      en: "end"
+      jp: "終了"
+      stats: "max"
+    epochs:
+      en: "epochs"
+      jp: "測定回数"
+      stats: "mean"
+    interval:
+      en: "interval"
+      jp: "測定間隔"
+      stats: "mean"
+    pdop:
+      en: "pdop"
+      jp: "PDOP"
+      stats: "max"
+    number_of_satellites:
+      en: "number_of_satellites"
+      jp: "衛星数"
+      stats: "min"
+    signals:
+      en: "signals"
+      jp: "衛星信号"
+      stats: "unique"
+    signal_frequencies:
+      en: "signal_frequencies"
+      jp: "周波数"
+      stats: "unique_count"
+    receiver: 
+    
+
+    
+    
+    
+  drogger_gps:
+    # Specify the column names for each data source of Droger-GPS
+    ele: 
+      en: "altitude"
+      jp: "標高"
+    ellipsoidHeight:
+      en: "ellipsoid_height"
+      jp: "楕円体高"
+    geoidheight: 
+      en: "geoid_height"
+      jp: "ジオイド高"
+    name:
+      en: "point_name"
+      jp: "測点名"
+    lon:
+      en: "longitude"
+      jp: "経度"
+    lat:
+      en: "latitude"
+      jp: "緯度"
+    sat:
+      en: "number_of_satellites"
+      jp: "衛星数"
+    hdop:
+      en: "pdop"
+      jp: "PDOP"
+    vdop:
+      en: "vdop"
+      jp: "VDOP"
+    pdop:
+      en: "pdop"
+      jp: "PDOP"
+    pointNumber:
+      en: "point_number"
+      jp: "測点番号"
+    coordGenaration:
+      en: "jgd"
+      jp: "平面直角座標系"
+    type:
+      en: "epsg"
+      jp: "EPSG"
+    y:
+      en: "transformed_y"
+      jp: "補正後Y"
+    x:
+      en: "transformed_x"
+      jp: "補正後X"
+    starttime:
+      en: "start"
+      jp: "開始"
+    endtime:
+      en: "end"
+      jp: "終了"
+    epochs:
+      en: "epochs"
+      jp: "測定回数"
+    epochInterval:
+      en: "interval"
+      jp: "測定間隔"
+    stddevDistanceMeter:
+      en: "std_h"
+      jp: "水平方向標準偏差"
+    stddevHeightMeter:
+      en: "std_v"
+      jp: "鉛直方向標準偏差"
+    fix:
+      en: "fix"
+      jp: "Fix"
+    fixMode:
+      en: "fix_mode"
+      jp: "Fixモード"
+    antennaHeightMesure:
+      en: "antenna_height"
+      jp: "アンテナ高"
+    signals:
+      en: "signals"
+      jp: "衛星信号"
+    receiverName:
+      en: "receiver"
+      jp: "受信機"
+    antennaType:
+      en: "antenna"
+      jp: "アンテナ"
+  
+  gyoroman_gg_csv:
+    # Specify the column names for each data source of Gyoroman GG
+    Nod:
+      en: "point_name"
+      jp: "測点名"
+    INDX:
+      en: "point_number"
+      jp: "測点番号"
+    LAT:
+      en: "latitude"
+      jp: "緯度"
+    LON:
+      en: "longitude"
+      jp: "経度"
+    HEIGHT:
+      en: "altitude"
+      jp: "標高"
+    SYSTIME:
+      en: "end"
+      jp: "終了"
+    GEOIDH:
+      en: "geoid_height"
+      jp: "ジオイド高"
+    SATN:
+      en: "number_of_satellites"
+      jp: "衛星数"
+    PDOP:
+      en: "pdop"
+      jp: "PDOP"
+    HDOP:
+      en: "hdop"
+      jp: "HDOP"
+    VDOP:
+      en: "vdop"
+      jp: "vdop"
+    DATAN:
+      en: "epochs"
+      jp: "測定回数"
+    RMSX:
+      en: "std_h"
+      jp: "水平方向標準偏差"
+    RMSY:
+      en: "std_v"
+      jp: "鉛直方向標準偏差"
+    
+
+satellites:
+  signals:
+    - "L1" # カーナビやスマホなどの一般的なGPS
+    - "L2" # 電離層遅延の計算に必要なデータ
+    - "L5" # 新しい人工衛星に搭載されている方式。QZSS
+    - "L6" # 日本のGPS衛星「みちびき」に搭載されている方式。cm級の補強する信号。
+    
+    
+web:
+  dummy: "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0"
+  elevation: "https://cyberjapandata2.gsi.go.jp/general/dem/scripts/getelevation.php?lon={}&lat={}&outtype=JSON"
+  semi_dynamic: "http://vldb.gsi.go.jp/sokuchi/surveycalc/semidyna/web/semidyna_r.php?"
+
+  
+  
+    
+    
+
+
+
+
+
+
