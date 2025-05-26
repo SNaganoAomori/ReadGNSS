@@ -1,0 +1,244 @@
+# 全体で使用する列名の設定ファイル。
+# 列名を変更したい場合は、ここで変更する。
+default:
+  sort_index:
+    en: "sort_index"
+    ja: "sort_index"
+
+  start:
+    drg-gps: "starttime"
+    en: "start"
+    ja: "開始"
+
+  end:
+    drg-gps: "endtime"
+    gyoroman-gg: "SYSTIME"
+    en: "end"
+    ja: "終了"
+
+  measurement_time:
+    en: "measurement_time"
+    ja: "測定時間[秒]"
+
+  point:
+    en: "point"
+    ja: "測点"
+
+  point_name:
+    drg-gps: "name"
+    gyoroman-gg: "Nod"
+    en: "point_name"
+    ja: "測点名"
+
+  point_number:
+    drg-gps: "pointNumber"
+    gyoroman-gg: "INDX"
+    en: "point_number"
+    ja: "測点番号"
+
+  longitude:
+    drg-gps: "lon"
+    gyoroman-gg: "LON"
+    en: "longitude"
+    ja: "経度"
+
+  latitude:
+    drg-gps: "lat"
+    gyoroman-gg: "LAT"
+    en: "latitude"
+    ja: "緯度"
+
+  altitude:
+    drg-gps: "ele"
+    gyoroman-gg: "HEIGHT"
+    en: "altitude"
+    ja: "高度"
+
+  ellipsoid_height:
+    drg-gps: "ellipsoidHeight"
+    en: "ellipsoid_height"
+    ja: "楕円体高"
+
+  geoid_height:
+    drg-gps: "geoidheight"
+    gyoroman-gg: "GEOIDH"
+    en: "geoid_height"
+    ja: "ジオイド高"
+
+  fix:
+    drg-gps: "fix"
+    en: "fix"
+    ja: "Fix"
+
+  fix_mode:
+    drg-gps: "fixMode"
+    en: "fix_mode"
+    ja: "FixMode"
+
+  epochs:
+    drg-gps: "epochs"
+    gyoroman-gg: "DATAN"
+    en: "epochs"
+    ja: "測定回数"
+
+  interval:
+    drg-gps: "epochInterval"
+    en: "interval"
+    ja: "測定間隔[秒]"
+
+  pdop:
+    drg-gps: "pdop"
+    gyoroman-gg: "PDOP"
+    en: "pdop"
+    ja: "PDOP"
+
+  number_of_satellites:
+    drg-gps: "sat"
+    gyoroman-gg: "SATN"
+    en: "number_of_satellites"
+    ja: "衛星数"
+
+  std_h:
+    drg-gps: "stddevDistanceMeter"
+    gyoroman-gg: "RMSX"
+    en: "std_h"
+    ja: "水平方向標準偏差"
+
+  std_v:
+    drg-gps: "stddevHeightMeter"
+    gyoroman-gg: "RMSY"
+    en: "std_v"
+    ja: "鉛直方向標準偏差"
+
+  signals:
+    drg-gps: "signals"
+    en: "signals"
+    ja: "衛星信号"
+
+  signal_frequencies:
+    en: "signal_frequencies"
+    ja: "周波数"
+
+  receiver:
+    drg-gps: "receiverName"
+    en: "receiver"
+    ja: "受信機"
+
+  antenna:
+    drg-gps: "antennaType"
+    en: "antenna"
+    ja: "アンテナ"
+
+  jgd:
+    drg-gps: "coordGenaration"
+    en: "jgd"
+    ja: "平面直角座標系"
+
+  epsg:
+    drg-gps: "type"
+    en: "epsg"
+    ja: "EPSG"
+
+  transformed_y:
+    drg-gps: "y"
+    en: "transformed_Y"
+    ja: "補正後Y"
+
+  transformed_x:
+    drg-gps: "x"
+    en: "transformed_X"
+    ja: "補正後X"
+
+  office:
+    en: "office"
+    ja: "森林管理署"
+
+  branch_office:
+    en: "branch_office"
+    ja: "森林事務所"
+
+  local_area:
+    en: "local_area"
+    ja: "国有林"
+
+  address:
+    en: "address"
+    ja: "林小班"
+
+  project_year:
+    en: "project_year"
+    ja: "事業年度"
+
+  project_name:
+    en: "project_name"
+    ja: "事業名"
+
+  surveyor:
+    en: "surveyor"
+    ja: "測量者"
+
+  group_name:
+    en: "group_name"
+    ja: "班名"
+
+  label:
+    en: "label"
+    ja: "label"
+
+  point_size:
+    en: "point_size"
+    ja: "point_size"
+
+# データを利用する列名のリスト
+use_cols_en:
+  - sort_index
+  - start
+  - end
+  - point
+  - point_name
+  - point_number
+  - longitude
+  - latitude
+  - altitude
+  - ellipsoid_height
+  - geoid_height
+  - antenna_height
+  - fix
+  - fix_mode
+  - epochs
+  - interval
+  - pdop
+  - number_of_satellites
+  - std_h
+  - std_v
+  - signals
+  - signal_frequencies
+  - receiver
+  - antenna
+  - jgd
+  - epsg
+  - transformed_y
+  - transformed_x
+  - group_name
+  - project_year
+  - project_name
+  - office
+  - branch_office
+  - local_area
+  - address
+  - surveyor
+  - label
+  - point_size
+
+colors:
+  blue: '#0000ff'
+  gold: '#ffd700'
+  green: '#008000'
+  limegreen: '#32cd32'
+  olive: '#008b8b'
+  orange: '#ff8c00'
+  pink: '#ff1493'
+  red: '#dc143c'
+  skyblue: '#00bfff'
+  violet: '#8a2be2'
+

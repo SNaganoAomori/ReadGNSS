@@ -3,19 +3,19 @@ from typing import Dict, List, Any
 import unicodedata
 import xml.etree.ElementTree as ET
 
-from .config import AppsFields
-from .config import DefaultFields
-from .config import FieldSpec
 from .models import original_data_to
 from .models import DataModel
-
+from .config import ADDITIONAL_EN_FIELD_NAMES
+from .config import MODEL_EN_FIELD_NAMES
+from .config import DRG_RENAME_ORG_TO_EN
+from .config import GYORO_RENAME_ORG_TO_EN
 
 
 class _DrgWayPoint(object):
     def __init__(self, fp: str):
         super().__init__()
         self.trees = [tree for tree in ET.parse(fp).getroot()]
-      
+
     def _loop(self, tree):
         results = []
         try:
@@ -25,7 +25,7 @@ class _DrgWayPoint(object):
             results.append(tree)
             pass
         return results
-    
+
     def _convert_float(self, value):
         try:
             val = float(value)
@@ -33,7 +33,7 @@ class _DrgWayPoint(object):
             return value
         else:
             return val
-    
+
     def _read_coords(self, sentence: str) -> Dict:
         """
         ## Description:
@@ -52,17 +52,17 @@ class _DrgWayPoint(object):
             True
         """
         coords = dict()
-        for sent in sentence.split(' '):
-            if 'lon' in sent:
-                coords['lon'] = float(sent.replace('lon=', ''))
-            elif 'lat' in sent:
-                coords['lat'] = float(sent.replace('lat=', ''))
-            elif 'ellipsoidHeight' in sent:
-                coords['ellipsoidHeight'] = float(sent.replace('ellipsoidHeight=', ''))
+        for sent in sentence.split(" "):
+            if "lon" in sent:
+                coords["lon"] = float(sent.replace("lon=", ""))
+            elif "lat" in sent:
+                coords["lat"] = float(sent.replace("lat=", ""))
+            elif "ellipsoidHeight" in sent:
+                coords["ellipsoidHeight"] = float(sent.replace("ellipsoidHeight=", ""))
         return coords
 
     def read_items(self):
-        '''
+        """
         Description:
             Gpxファイルの全てのタグを読み込み、辞書化する。
         Returns:
@@ -75,7 +75,7 @@ class _DrgWayPoint(object):
             >>> items = drg.read_items()
             >>> print(items[0] == Answer._DrgWayPoint__read_items)
             True
-        '''
+        """
         results = []
         for tree in self.trees:
             rows = []
@@ -99,35 +99,39 @@ class _DrgWayPoint(object):
             items = dict()
             for row in rows:
                 tag = str(row.tag)
-                key = tag[tag.find('}') + 1:]
+                key = tag[tag.find("}") + 1 :]
                 items[key] = self._convert_float(row.text)
             # cmtから座標を取り出しitemsに追加
-            coors = self._read_coords(items.get('cmt'))
-            del items['cmt']
+            coors = self._read_coords(items.get("cmt"))
+            coors["lon"] = float(tree.get("lon"))
+            coors["lat"] = float(tree.get("lat"))
+            del items["cmt"]
             items.update(coors)
             results.append(items)
         return results
-            
 
-def _modelling(items: List[Dict[str, Any]], spec: FieldSpec) -> List[DataModel]:
+
+def _modelling(
+    items: List[Dict[str, Any]], rename_dict_by_org_to_en: Dict[str, str]
+) -> List[DataModel]:
     """
     ## Description:
         データをDataModelに変換する。
     Args:
         items(List[Dict[str, Any]]): 変換するデータ。これは original_data_to()で変換されたデータ
-        spec(ColumnSpec): 変換するデータのスペック
+        rename_dict_by_org_to_en(Dict[str, str]): カラム名の変換辞書. {元のカラム名: 英語のカラム名}
     Returns:
         data_models(List[DataModel]): 変換されたデータ
     Example:
         >>> drg = _DrgWayPoint(file_path)
         >>> org_data = drg.read_items()
-        >>> spec = AppsFields().get_drg_wp_spec()
+        >>> spec =
         >>> data_models = _modelling(org_data, spec)
     """
     _data_models = []
     for data in items:
-        data = original_data_to(data, spec)
-        if data.get(DefaultFields.longitude.value) is None:
+        data = original_data_to(data, rename_dict_by_org_to_en)
+        if data.get(MODEL_EN_FIELD_NAMES.longitude) is None:
             # 緯度経度がないデータは無視
             continue
         data_model = DataModel(**data)
@@ -142,6 +146,8 @@ def _modelling(items: List[Dict[str, Any]], spec: FieldSpec) -> List[DataModel]:
         data_model.make_point()
         data_models.append(data_model)
     return data_models
+
+
 """
 --------------------------------------------------------------------------------
 ******************* 以下はGNSS計測データの読み込み関数 *************************
@@ -152,7 +158,7 @@ def _modelling(items: List[Dict[str, Any]], spec: FieldSpec) -> List[DataModel]:
     - gyoroman_gg2
 
    上記のデータフォーマットが変更になった場合も同じ場所で変更してください。
-   `en` と `jp` のカラム名は現在登録されているカラム名と同じにしてください。
+   `en` と `ja` のカラム名は現在登録されているカラム名と同じにしてください。
     
 2. config.py の `AppsFields` に上記で作成した設定を読み込むメソッドを追加。
 
@@ -164,6 +170,7 @@ def _modelling(items: List[Dict[str, Any]], spec: FieldSpec) -> List[DataModel]:
 5. 最後に下に新しい関数を追加してください。
 --------------------------------------------------------------------------------
 """
+
 
 def read_drg_way_point(fp: str, **kwargs) -> List[DataModel]:
     """
@@ -189,14 +196,13 @@ def read_drg_way_point(fp: str, **kwargs) -> List[DataModel]:
     """
     # WayPointの読み込み
     drg = _DrgWayPoint(fp)
-    spec = AppsFields().get_drg_wp_spec()
     # 追加情報の取得
     add_dict = dict()
-    for add_col in spec.add_columns_en:
+    for add_col in ADDITIONAL_EN_FIELD_NAMES.model_dump().values():
         add_dict[add_col] = kwargs.get(add_col, None)
     # WayPointデータと追加情報を結合してDataModelに変換
     drg_items = [dict(**item, **add_dict) for item in drg.read_items()]
-    data_models = _modelling(drg_items, spec)
+    data_models = _modelling(drg_items, DRG_RENAME_ORG_TO_EN)
     return data_models
 
 
@@ -222,25 +228,25 @@ def read_gyoroman_gg2(fp: str, **kwargs) -> List[DataModel]:
         >>> data_models = read_gyoroman_gg2(file_path, **add_info)
     """
     # CSVファイルの読み込み
-    with open(fp, 'r', encoding='utf-8') as f:
+    with open(fp, "r", encoding="utf-8") as f:
         reader = csv.reader(f)
-        header = [col.replace('\ufeff', '') for col in next(reader)]
+        header = [col.replace("\ufeff", "") for col in next(reader)]
         data = [row for row in reader]
         results = []
         for row in data:
             items = dict()
             for i, key in enumerate(header):
-                if '' == key:
+                if "" == key:
                     pass
                 else:
-                    items[key] = unicodedata.normalize('NFKC', row[i])
+                    items[key] = unicodedata.normalize("NFKC", row[i])
             results.append(items)
-    spec = AppsFields().get_gyoro_gg_csv_spec()
+    # 追加情報の取得
     add_dict = dict()
-    for add_col in spec.add_columns_en:
+    for add_col in ADDITIONAL_EN_FIELD_NAMES.model_dump().values():
         add_dict[add_col] = kwargs.get(add_col, None)
     # CSVデータと追加情報を結合してDataModelに変換
-    drg_items = [dict(**item, **add_dict)for item in results]
+    drg_items = [dict(**item, **add_dict) for item in results]
     # DataModelに変換
-    data_models = _modelling(drg_items, spec)
+    data_models = _modelling(drg_items, GYORO_RENAME_ORG_TO_EN)
     return data_models

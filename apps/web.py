@@ -12,6 +12,7 @@ from pydantic import ValidationError
 
 from .config import Web
 from .config import SemiDynamicCorrection
+
 web = Web()
 
 
@@ -19,12 +20,12 @@ web = Web()
 # **************** 地理院APIで標高値を取得する非同期処理 ****************
 # ***********************************************************************
 async def fetch_elevation(
-    session: aiohttp.client.ClientSession, 
+    session: aiohttp.client.ClientSession,
     index: int,
-    lon: float, 
+    lon: float,
     lat: float,
-    max_retry: int=5,
-    time_out: int=10
+    max_retry: int = 5,
+    time_out: int = 10,
 ) -> Dict[int, float]:
     """
     ## Description:
@@ -45,21 +46,22 @@ async def fetch_elevation(
         try:
             async with session.get(url, headers=headers, timeout=time_out) as response:
                 data = await response.json()
-                if data.get('ErrMsg') is None:
-                    print(f"Idx: {index}  標高: {data['elevation']}m (lon: {lon}, lat: {lat})")
-                    return {index: data['elevation']}
+                if data.get("ErrMsg") is None:
+                    print(
+                        f"Idx: {index}  標高: {data['elevation']}m (lon: {lon}, lat: {lat})"
+                    )
+                    return {index: data["elevation"]}
                 else:
-                    print('サーバーが混みあっています。')
+                    print("サーバーが混みあっています。")
         except aiohttp.ClientError:
-            print(f"リクエストに失敗しました (Index: {index}, lon: {lon}, lat: {lat})。再試行中...")
+            print(
+                f"リクエストに失敗しました (Index: {index}, lon: {lon}, lat: {lat})。再試行中..."
+            )
     return {index: None}
 
 
 async def fetch_elevation_main(
-    idxs: List[int], 
-    lons: List[float], 
-    lats: List[float],
-    time_sleep: int=10
+    idxs: List[int], lons: List[float], lats: List[float], time_sleep: int = 10
 ) -> List[Dict[int, float]]:
     """
     ## Description:
@@ -87,10 +89,7 @@ async def fetch_elevation_main(
     return results
 
 
-def fetch_elevation_from_web(
-    lons: List[float], 
-    lats: List[float]
-) -> List[float]:
+def fetch_elevation_from_web(lons: List[float], lats: List[float]) -> List[float]:
     """
     ## Description:
         非同期処理により、地理院APIで標高値を取得する
@@ -124,15 +123,16 @@ class Coords(NamedTuple):
     latitude: float
     altitude: float
 
+
 async def fetch_corrected_semidynamic(
-    session: aiohttp.client.ClientSession, 
+    session: aiohttp.client.ClientSession,
     index: int,
     correction_datetime: Union[str, int, datetime.datetime],
-    lon: float, 
+    lon: float,
     lat: float,
-    alti: float=0.0,
-    max_retry: int=5,
-    time_out: int=10
+    alti: float = 0.0,
+    max_retry: int = 5,
+    time_out: int = 10,
 ) -> Dict[int, float]:
     """
     ## Description:
@@ -156,7 +156,7 @@ async def fetch_corrected_semidynamic(
             correction_year=correction_datetime,
             longitude=lon,
             latitude=lat,
-            altitude=alti   
+            altitude=alti,
         )
     except ValidationError as e:
         pprint(e.errors())
@@ -165,10 +165,12 @@ async def fetch_corrected_semidynamic(
         try:
             async with session.get(url, headers=headers, timeout=time_out) as response:
                 data = await response.json()
-                if data.get('ErrMsg') is None:
-                    data = data.get('OutputData')
+                if data.get("ErrMsg") is None:
+                    data = data.get("OutputData")
                     if data.get("altitude") == {}:
-                        data['altitude'] = 0.0
+                        data["altitude"] = 0.0
+                    data["longitude"] = float(data["longitude"])
+                    data["latitude"] = float(data["latitude"])
                     data = Coords(**data)
                     print(
                         f"Request   => Lon: {lon}, Lat: {lat}, Alt: {alti}m\n"
@@ -178,18 +180,19 @@ async def fetch_corrected_semidynamic(
                 else:
                     print(f'サーバーが混みあっています。ErrMsg: {data.get("ErrMsg")}')
         except aiohttp.ClientError:
-            print(f"リクエストに失敗しました (Index: {index}, lon: {lon}, lat: {lat})。再試行中...")
+            print(
+                f"リクエストに失敗しました (Index: {index}, lon: {lon}, lat: {lat})。再試行中..."
+            )
     return {index: None}
 
 
-
 async def fetch_corrected_semidynamic_main(
-    idxs: List[int], 
+    idxs: List[int],
     correction_datetime: Union[str, int, datetime.datetime],
-    lons: List[float], 
+    lons: List[float],
     lats: List[float],
-    altis: List[float]=None,
-    time_sleep: int=10
+    altis: List[float] = None,
+    time_sleep: int = 10,
 ) -> List[Dict[int, float]]:
     """
     ## Description:
@@ -208,12 +211,14 @@ async def fetch_corrected_semidynamic_main(
     if altis is None:
         # 標高が指定されていない場合は、0.0mとする。問題はない
         altis = [0.0] * len(lons)
-    
+
     results = []
     async with aiohttp.ClientSession() as session:
         tasks = []
         for idx, lon, lat, alti in zip(idxs, lons, lats, altis):
-            task = fetch_corrected_semidynamic(session, idx, correction_datetime, lon, lat, alti)   
+            task = fetch_corrected_semidynamic(
+                session, idx, correction_datetime, lon, lat, alti
+            )
             tasks.append(task)
             if len(tasks) == 10:
                 results += await asyncio.gather(*tasks)
@@ -228,11 +233,13 @@ def fetch_corrected_semidynamic_from_web(
     correction_datetime: Union[str, int, datetime.datetime],
     lons: List[float],
     lats: List[float],
-    altis: List[float]=None
+    altis: List[float] = None,
 ) -> List[Coords]:
     """
     ## Description:
-        非同期処理により、地理院APIでセミダイナミック補正を行う
+        非同期処理により、地理院APIでセミダイナミック補正を行う。
+        これは今期から元期への2次元補正を行う。2025/4以降に測量を行ったものでは
+        通常2024年を元期とするが、2024年以前に測量を行ったものでは2011年を元期とする。
     Args:
         correction_datetime(Union[str, int, datetime.datetime]): 補正日時
         lons(List[float]): 10進経度
@@ -243,9 +250,7 @@ def fetch_corrected_semidynamic_from_web(
     """
     idxs = list(range(len(lons)))
     resps_lst = asyncio.run(
-        fetch_corrected_semidynamic_main(
-            idxs, correction_datetime, lons, lats, altis
-        )
+        fetch_corrected_semidynamic_main(idxs, correction_datetime, lons, lats, altis)
     )
     _data = {}
     for resp in resps_lst:
@@ -253,4 +258,3 @@ def fetch_corrected_semidynamic_from_web(
     sorted_keys = sorted(_data.keys())
     sorted_coords = [_data[key] for key in sorted_keys]
     return sorted_coords
-
