@@ -1,0 +1,905 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:b="http://www.bizstation.jp/waypoint_extension" creator="Drogger GPS for Android 2.14.240" version="1.1">
+<wpt lat="41.142748953897254" lon="141.30713264254953">
+		<ele>104.7064</ele>
+		<time>2023-11-09T10:51:42.000+09:00</time>
+		<geoidheight>35.0146</geoidheight>
+		<name>1.0</name>
+		<cmt>Raw-data lat=41.142745499 lon=141.307135647 ellipsoidHeight=139.778 Measurement_time_sec=120</cmt>
+		<fix>dgps</fix>
+		<sat>21</sat>
+		<hdop>0.66</hdop>
+		<vdop>1.3581237</vdop>
+		<pdop>1.51</pdop>
+		<extensions>
+			<b:pointNumber>103</b:pointNumber>
+			<b:coordGenaration>JGD2011_R</b:coordGenaration>
+			<b:coordinate_transform>
+				<b:type>JPN10</b:type>
+				<b:x>126992.7959</b:x>
+				<b:y>39773.1479</b:y>
+			</b:coordinate_transform>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2023-11-09T10:49:43.000</b:starttime>
+				<b:endtime>2023-11-09T10:51:42.000</b:endtime>
+				<b:epochs>120</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>2.2135</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.8911</b:stddevHeightMeter>
+				<b:lastHacc>1.024</b:lastHacc>
+				<b:lastVacc>1.722</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.0</b:tiltAntHeight>
+				<b:antennaHeightNote>2.0</b:antennaHeightNote>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>DG-PRO1RWS02 HPG 1.13</b:receiverName>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="41.142554681498076" lon="141.3070804120347">
+		<ele>102.2312</ele>
+		<time>2023-11-09T10:54:42.000+09:00</time>
+		<geoidheight>35.0159</geoidheight>
+		<name>2.0</name>
+		<cmt>Raw-data lat=41.142551226 lon=141.307083417 ellipsoidHeight=137.304 Measurement_time_sec=120</cmt>
+		<fix>dgps</fix>
+		<sat>22</sat>
+		<hdop>0.6</hdop>
+		<vdop>1.0507617</vdop>
+		<pdop>1.21</pdop>
+		<extensions>
+			<b:pointNumber>104</b:pointNumber>
+			<b:coordGenaration>JGD2011_R</b:coordGenaration>
+			<b:coordinate_transform>
+				<b:type>JPN10</b:type>
+				<b:x>126971.1989</b:x>
+				<b:y>39768.8808</b:y>
+			</b:coordinate_transform>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2023-11-09T10:52:40.000</b:starttime>
+				<b:endtime>2023-11-09T10:54:42.000</b:endtime>
+				<b:epochs>120</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.8562</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.783</b:stddevHeightMeter>
+				<b:lastHacc>0.713</b:lastHacc>
+				<b:lastVacc>1.25</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.0</b:tiltAntHeight>
+				<b:antennaHeightNote>2.0</b:antennaHeightNote>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>DG-PRO1RWS02 HPG 1.13</b:receiverName>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="41.14236559120071" lon="141.30696221338053">
+		<ele>99.1259</ele>
+		<time>2023-11-09T10:57:43.000+09:00</time>
+		<geoidheight>35.0172</geoidheight>
+		<name>3.0</name>
+		<cmt>Raw-data lat=41.142362135 lon=141.306965219 ellipsoidHeight=134.2 Measurement_time_sec=120</cmt>
+		<fix>dgps</fix>
+		<sat>22</sat>
+		<hdop>0.63</hdop>
+		<vdop>1.1142261</vdop>
+		<pdop>1.28</pdop>
+		<extensions>
+			<b:pointNumber>105</b:pointNumber>
+			<b:coordGenaration>JGD2011_R</b:coordGenaration>
+			<b:coordinate_transform>
+				<b:type>JPN10</b:type>
+				<b:x>126950.1472</b:x>
+				<b:y>39759.0727</b:y>
+			</b:coordinate_transform>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2023-11-09T10:55:37.000</b:starttime>
+				<b:endtime>2023-11-09T10:57:43.000</b:endtime>
+				<b:epochs>120</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.7607</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>1.2403</b:stddevHeightMeter>
+				<b:lastHacc>0.629</b:lastHacc>
+				<b:lastVacc>1.056</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.0</b:tiltAntHeight>
+				<b:antennaHeightNote>2.0</b:antennaHeightNote>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>DG-PRO1RWS02 HPG 1.13</b:receiverName>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="41.142203515734735" lon="141.30689999590837">
+		<ele>107.6119</ele>
+		<time>2023-11-09T11:01:11.000+09:00</time>
+		<geoidheight>35.0182</geoidheight>
+		<name>4.0</name>
+		<cmt>Raw-data lat=41.142200059 lon=141.306903002 ellipsoidHeight=142.687 Measurement_time_sec=120</cmt>
+		<fix>dgps</fix>
+		<sat>21</sat>
+		<hdop>0.66</hdop>
+		<vdop>1.1776673</vdop>
+		<pdop>1.35</pdop>
+		<extensions>
+			<b:pointNumber>106</b:pointNumber>
+			<b:coordGenaration>JGD2011_R</b:coordGenaration>
+			<b:coordinate_transform>
+				<b:type>JPN10</b:type>
+				<b:x>126932.1209</b:x>
+				<b:y>39753.9477</b:y>
+			</b:coordinate_transform>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2023-11-09T10:58:48.000</b:starttime>
+				<b:endtime>2023-11-09T11:01:11.000</b:endtime>
+				<b:epochs>120</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.454</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>1.9173</b:stddevHeightMeter>
+				<b:lastHacc>0.992</b:lastHacc>
+				<b:lastVacc>1.715</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.0</b:tiltAntHeight>
+				<b:antennaHeightNote>2.0</b:antennaHeightNote>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>DG-PRO1RWS02 HPG 1.13</b:receiverName>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="41.1423105919621" lon="141.3066092604668">
+		<ele>111.9201</ele>
+		<time>2023-11-09T11:04:51.000+09:00</time>
+		<geoidheight>35.0180</geoidheight>
+		<name>5.0</name>
+		<cmt>Raw-data lat=41.142307135 lon=141.306612267 ellipsoidHeight=146.995 Measurement_time_sec=120</cmt>
+		<fix>dgps</fix>
+		<sat>25</sat>
+		<hdop>0.63</hdop>
+		<vdop>1.0213227</vdop>
+		<pdop>1.2</pdop>
+		<extensions>
+			<b:pointNumber>107</b:pointNumber>
+			<b:coordGenaration>JGD2011_R</b:coordGenaration>
+			<b:coordinate_transform>
+				<b:type>JPN10</b:type>
+				<b:x>126943.8786</b:x>
+				<b:y>39729.4770</b:y>
+			</b:coordinate_transform>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2023-11-09T11:02:48.000</b:starttime>
+				<b:endtime>2023-11-09T11:04:51.000</b:endtime>
+				<b:epochs>120</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.8067</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>1.5755</b:stddevHeightMeter>
+				<b:lastHacc>0.962</b:lastHacc>
+				<b:lastVacc>1.482</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.0</b:tiltAntHeight>
+				<b:antennaHeightNote>2.0</b:antennaHeightNote>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>DG-PRO1RWS02 HPG 1.13</b:receiverName>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="41.14252211969213" lon="141.30644598452864">
+		<ele>109.3041</ele>
+		<time>2023-11-09T11:08:09.000+09:00</time>
+		<geoidheight>35.0170</geoidheight>
+		<name>6.0</name>
+		<cmt>Raw-data lat=41.142518663 lon=141.306448991 ellipsoidHeight=144.378 Measurement_time_sec=120</cmt>
+		<fix>dgps</fix>
+		<sat>26</sat>
+		<hdop>0.51</hdop>
+		<vdop>0.8717798</vdop>
+		<pdop>1.01</pdop>
+		<extensions>
+			<b:pointNumber>108</b:pointNumber>
+			<b:coordGenaration>JGD2011_R</b:coordGenaration>
+			<b:coordinate_transform>
+				<b:type>JPN10</b:type>
+				<b:x>126967.2935</b:x>
+				<b:y>39715.6430</b:y>
+			</b:coordinate_transform>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2023-11-09T11:05:42.000</b:starttime>
+				<b:endtime>2023-11-09T11:08:09.000</b:endtime>
+				<b:epochs>120</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>2.3801</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>2.0043</b:stddevHeightMeter>
+				<b:lastHacc>0.947</b:lastHacc>
+				<b:lastVacc>1.296</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.0</b:tiltAntHeight>
+				<b:antennaHeightNote>2.0</b:antennaHeightNote>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>DG-PRO1RWS02 HPG 1.13</b:receiverName>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="41.14260924005668" lon="141.30610639293644">
+		<ele>106.8439</ele>
+		<time>2023-11-09T11:12:07.000+09:00</time>
+		<geoidheight>35.0171</geoidheight>
+		<name>7.0</name>
+		<cmt>Raw-data lat=41.142605783 lon=141.3061094 ellipsoidHeight=141.918 Measurement_time_sec=120</cmt>
+		<fix>dgps</fix>
+		<sat>25</sat>
+		<hdop>0.54</hdop>
+		<vdop>0.9237424</vdop>
+		<pdop>1.07</pdop>
+		<extensions>
+			<b:pointNumber>109</b:pointNumber>
+			<b:coordGenaration>JGD2011_R</b:coordGenaration>
+			<b:coordinate_transform>
+				<b:type>JPN10</b:type>
+				<b:x>126976.8130</b:x>
+				<b:y>39687.0832</b:y>
+			</b:coordinate_transform>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2023-11-09T11:10:08.000</b:starttime>
+				<b:endtime>2023-11-09T11:12:07.000</b:endtime>
+				<b:epochs>120</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.9305</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>1.5324</b:stddevHeightMeter>
+				<b:lastHacc>1.176</b:lastHacc>
+				<b:lastVacc>1.454</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.0</b:tiltAntHeight>
+				<b:antennaHeightNote>2.0</b:antennaHeightNote>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>DG-PRO1RWS02 HPG 1.13</b:receiverName>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="41.14255359200361" lon="141.30564813578272">
+		<ele>104.7639</ele>
+		<time>2023-11-09T11:15:36.000+09:00</time>
+		<geoidheight>35.0181</geoidheight>
+		<name>8.0</name>
+		<cmt>Raw-data lat=41.142550134 lon=141.305651144 ellipsoidHeight=139.839 Measurement_time_sec=120</cmt>
+		<fix>dgps</fix>
+		<sat>26</sat>
+		<hdop>0.51</hdop>
+		<vdop>0.8601744</vdop>
+		<pdop>1.0</pdop>
+		<extensions>
+			<b:pointNumber>110</b:pointNumber>
+			<b:coordGenaration>JGD2011_R</b:coordGenaration>
+			<b:coordinate_transform>
+				<b:type>JPN10</b:type>
+				<b:x>126970.4248</b:x>
+				<b:y>39648.6481</b:y>
+			</b:coordinate_transform>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2023-11-09T11:13:37.000</b:starttime>
+				<b:endtime>2023-11-09T11:15:36.000</b:endtime>
+				<b:epochs>120</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.2723</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>1.1379</b:stddevHeightMeter>
+				<b:lastHacc>0.865</b:lastHacc>
+				<b:lastVacc>1.324</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.0</b:tiltAntHeight>
+				<b:antennaHeightNote>2.0</b:antennaHeightNote>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>DG-PRO1RWS02 HPG 1.13</b:receiverName>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="41.142497436590546" lon="141.30539676209708">
+		<ele>106.0272</ele>
+		<time>2023-11-09T11:24:08.000+09:00</time>
+		<geoidheight>35.0188</geoidheight>
+		<name>9.0</name>
+		<cmt>Raw-data lat=41.142493978 lon=141.305399771 ellipsoidHeight=141.103 Measurement_time_sec=120</cmt>
+		<fix>dgps</fix>
+		<sat>25</sat>
+		<hdop>0.52</hdop>
+		<vdop>0.8774964</vdop>
+		<pdop>1.02</pdop>
+		<extensions>
+			<b:pointNumber>111</b:pointNumber>
+			<b:coordGenaration>JGD2011_R</b:coordGenaration>
+			<b:coordinate_transform>
+				<b:type>JPN10</b:type>
+				<b:x>126964.0745</b:x>
+				<b:y>39627.5802</b:y>
+			</b:coordinate_transform>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2023-11-09T11:22:09.000</b:starttime>
+				<b:endtime>2023-11-09T11:24:08.000</b:endtime>
+				<b:epochs>120</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>1.2548</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>2.3599</b:stddevHeightMeter>
+				<b:lastHacc>1.019</b:lastHacc>
+				<b:lastVacc>1.236</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.0</b:tiltAntHeight>
+				<b:antennaHeightNote>2.0</b:antennaHeightNote>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>DG-PRO1RWS02 HPG 1.13</b:receiverName>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="41.142763130649904" lon="141.30496261865815">
+		<ele>100.4560</ele>
+		<time>2023-11-09T11:28:15.000+09:00</time>
+		<geoidheight>35.0180</geoidheight>
+		<name>10.0</name>
+		<cmt>Raw-data lat=41.142759672 lon=141.304965628 ellipsoidHeight=135.531 Measurement_time_sec=120</cmt>
+		<fix>dgps</fix>
+		<sat>25</sat>
+		<hdop>0.52</hdop>
+		<vdop>0.8658522</vdop>
+		<pdop>1.01</pdop>
+		<extensions>
+			<b:pointNumber>112</b:pointNumber>
+			<b:coordGenaration>JGD2011_R</b:coordGenaration>
+			<b:coordinate_transform>
+				<b:type>JPN10</b:type>
+				<b:x>126993.3813</b:x>
+				<b:y>39590.9759</b:y>
+			</b:coordinate_transform>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2023-11-09T11:26:16.000</b:starttime>
+				<b:endtime>2023-11-09T11:28:15.000</b:endtime>
+				<b:epochs>120</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>1.3879</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>3.3093</b:stddevHeightMeter>
+				<b:lastHacc>0.983</b:lastHacc>
+				<b:lastVacc>1.373</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.0</b:tiltAntHeight>
+				<b:antennaHeightNote>2.0</b:antennaHeightNote>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>DG-PRO1RWS02 HPG 1.13</b:receiverName>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="41.14286936322689" lon="141.30447200276458">
+		<ele>104.0469</ele>
+		<time>2023-11-09T11:31:46.000+09:00</time>
+		<geoidheight>35.0181</geoidheight>
+		<name>11.0</name>
+		<cmt>Raw-data lat=41.142865904 lon=141.304475013 ellipsoidHeight=139.122 Measurement_time_sec=120</cmt>
+		<fix>dgps</fix>
+		<sat>24</sat>
+		<hdop>0.55</hdop>
+		<vdop>0.91782355</vdop>
+		<pdop>1.07</pdop>
+		<extensions>
+			<b:pointNumber>113</b:pointNumber>
+			<b:coordGenaration>JGD2011_R</b:coordGenaration>
+			<b:coordinate_transform>
+				<b:type>JPN10</b:type>
+				<b:x>127004.9551</b:x>
+				<b:y>39549.7271</b:y>
+			</b:coordinate_transform>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2023-11-09T11:29:44.000</b:starttime>
+				<b:endtime>2023-11-09T11:31:46.000</b:endtime>
+				<b:epochs>120</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.5535</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>2.1524</b:stddevHeightMeter>
+				<b:lastHacc>0.978</b:lastHacc>
+				<b:lastVacc>1.174</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.0</b:tiltAntHeight>
+				<b:antennaHeightNote>2.0</b:antennaHeightNote>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>DG-PRO1RWS02 HPG 1.13</b:receiverName>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="41.14294363393151" lon="141.30395629974896">
+		<ele>98.0625</ele>
+		<time>2023-11-09T11:33:59.000+09:00</time>
+		<geoidheight>35.0185</geoidheight>
+		<name>12.0</name>
+		<cmt>Raw-data lat=41.142940174 lon=141.303959311 ellipsoidHeight=133.138 Measurement_time_sec=60</cmt>
+		<fix>dgps</fix>
+		<sat>24</sat>
+		<hdop>0.54</hdop>
+		<vdop>0.90049976</vdop>
+		<pdop>1.05</pdop>
+		<extensions>
+			<b:pointNumber>114</b:pointNumber>
+			<b:coordGenaration>JGD2011_R</b:coordGenaration>
+			<b:coordinate_transform>
+				<b:type>JPN10</b:type>
+				<b:x>127012.9685</b:x>
+				<b:y>39506.3917</b:y>
+			</b:coordinate_transform>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2023-11-09T11:33:00.000</b:starttime>
+				<b:endtime>2023-11-09T11:33:59.000</b:endtime>
+				<b:epochs>60</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.2574</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.8524</b:stddevHeightMeter>
+				<b:lastHacc>0.991</b:lastHacc>
+				<b:lastVacc>1.235</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.0</b:tiltAntHeight>
+				<b:antennaHeightNote>2.0</b:antennaHeightNote>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L2 L1 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>DG-PRO1RWS02 HPG 1.13</b:receiverName>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="41.14311936510249" lon="141.30416588058628">
+		<ele>92.8649</ele>
+		<time>2023-11-09T11:35:59.000+09:00</time>
+		<geoidheight>35.0171</geoidheight>
+		<name>13.0</name>
+		<cmt>Raw-data lat=41.143115906 lon=141.304168891 ellipsoidHeight=127.939 Measurement_time_sec=60</cmt>
+		<fix>dgps</fix>
+		<sat>21</sat>
+		<hdop>0.59</hdop>
+		<vdop>0.97544867</vdop>
+		<pdop>1.14</pdop>
+		<extensions>
+			<b:pointNumber>115</b:pointNumber>
+			<b:coordGenaration>JGD2011_R</b:coordGenaration>
+			<b:coordinate_transform>
+				<b:type>JPN10</b:type>
+				<b:x>127032.5778</b:x>
+				<b:y>39523.8795</b:y>
+			</b:coordinate_transform>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2023-11-09T11:34:59.000</b:starttime>
+				<b:endtime>2023-11-09T11:35:59.000</b:endtime>
+				<b:epochs>60</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.2618</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.656</b:stddevHeightMeter>
+				<b:lastHacc>0.712</b:lastHacc>
+				<b:lastVacc>0.924</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.0</b:tiltAntHeight>
+				<b:antennaHeightNote>2.0</b:antennaHeightNote>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>DG-PRO1RWS02 HPG 1.13</b:receiverName>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="41.1431660466315" lon="141.30436532013414">
+		<ele>93.9844</ele>
+		<time>2023-11-09T11:37:29.000+09:00</time>
+		<geoidheight>35.0166</geoidheight>
+		<name>14.0</name>
+		<cmt>Raw-data lat=41.143162588 lon=141.30436833 ellipsoidHeight=129.058 Measurement_time_sec=60</cmt>
+		<fix>dgps</fix>
+		<sat>23</sat>
+		<hdop>0.57</hdop>
+		<vdop>0.9524705</vdop>
+		<pdop>1.11</pdop>
+		<extensions>
+			<b:pointNumber>116</b:pointNumber>
+			<b:coordGenaration>JGD2011_R</b:coordGenaration>
+			<b:coordinate_transform>
+				<b:type>JPN10</b:type>
+				<b:x>127037.8522</b:x>
+				<b:y>39540.5934</b:y>
+			</b:coordinate_transform>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2023-11-09T11:36:30.000</b:starttime>
+				<b:endtime>2023-11-09T11:37:29.000</b:endtime>
+				<b:epochs>60</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.4862</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.9769</b:stddevHeightMeter>
+				<b:lastHacc>0.777</b:lastHacc>
+				<b:lastVacc>0.916</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.0</b:tiltAntHeight>
+				<b:antennaHeightNote>2.0</b:antennaHeightNote>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L2 L1 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>DG-PRO1RWS02 HPG 1.13</b:receiverName>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="41.14318957922738" lon="141.30456141362663">
+		<ele>93.2729</ele>
+		<time>2023-11-09T11:38:57.000+09:00</time>
+		<geoidheight>35.0161</geoidheight>
+		<name>15.0</name>
+		<cmt>Raw-data lat=41.143186121 lon=141.304564423 ellipsoidHeight=128.346 Measurement_time_sec=60</cmt>
+		<fix>dgps</fix>
+		<sat>23</sat>
+		<hdop>0.57</hdop>
+		<vdop>0.94079757</vdop>
+		<pdop>1.1</pdop>
+		<extensions>
+			<b:pointNumber>117</b:pointNumber>
+			<b:coordGenaration>JGD2011_R</b:coordGenaration>
+			<b:coordinate_transform>
+				<b:type>JPN10</b:type>
+				<b:x>127040.5544</b:x>
+				<b:y>39557.0403</b:y>
+			</b:coordinate_transform>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2023-11-09T11:37:58.000</b:starttime>
+				<b:endtime>2023-11-09T11:38:57.000</b:endtime>
+				<b:epochs>60</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>1.1425</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.7369</b:stddevHeightMeter>
+				<b:lastHacc>0.917</b:lastHacc>
+				<b:lastVacc>1.109</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.0</b:tiltAntHeight>
+				<b:antennaHeightNote>2.0</b:antennaHeightNote>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L2 L1 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>DG-PRO1RWS02 HPG 1.13</b:receiverName>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="41.14311581386628" lon="141.3048797021956">
+		<ele>96.5620</ele>
+		<time>2023-11-09T11:40:42.000+09:00</time>
+		<geoidheight>35.0160</geoidheight>
+		<name>16.0</name>
+		<cmt>Raw-data lat=41.143112356 lon=141.304882711 ellipsoidHeight=131.635 Measurement_time_sec=60</cmt>
+		<fix>dgps</fix>
+		<sat>22</sat>
+		<hdop>0.6</hdop>
+		<vdop>1.0276673</vdop>
+		<pdop>1.19</pdop>
+		<extensions>
+			<b:pointNumber>118</b:pointNumber>
+			<b:coordGenaration>JGD2011_R</b:coordGenaration>
+			<b:coordinate_transform>
+				<b:type>JPN10</b:type>
+				<b:x>127032.5077</b:x>
+				<b:y>39583.8033</b:y>
+			</b:coordinate_transform>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2023-11-09T11:39:43.000</b:starttime>
+				<b:endtime>2023-11-09T11:40:42.000</b:endtime>
+				<b:epochs>60</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.2601</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.1524</b:stddevHeightMeter>
+				<b:lastHacc>1.087</b:lastHacc>
+				<b:lastVacc>1.244</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.0</b:tiltAntHeight>
+				<b:antennaHeightNote>2.0</b:antennaHeightNote>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L2 L1 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>DG-PRO1RWS02 HPG 1.13</b:receiverName>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="41.14303956056076" lon="141.30516977469586">
+		<ele>100.1620</ele>
+		<time>2023-11-09T11:42:12.000+09:00</time>
+		<geoidheight>35.0160</geoidheight>
+		<name>17.0</name>
+		<cmt>Raw-data lat=41.143036103 lon=141.305172783 ellipsoidHeight=135.235 Measurement_time_sec=60</cmt>
+		<fix>dgps</fix>
+		<sat>23</sat>
+		<hdop>0.6</hdop>
+		<vdop>0.9575489</vdop>
+		<pdop>1.13</pdop>
+		<extensions>
+			<b:pointNumber>119</b:pointNumber>
+			<b:coordGenaration>JGD2011_R</b:coordGenaration>
+			<b:coordinate_transform>
+				<b:type>JPN10</b:type>
+				<b:x>127024.1720</b:x>
+				<b:y>39608.1993</b:y>
+			</b:coordinate_transform>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2023-11-09T11:41:13.000</b:starttime>
+				<b:endtime>2023-11-09T11:42:12.000</b:endtime>
+				<b:epochs>60</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.2779</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.3539</b:stddevHeightMeter>
+				<b:lastHacc>0.942</b:lastHacc>
+				<b:lastVacc>1.166</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.0</b:tiltAntHeight>
+				<b:antennaHeightNote>2.0</b:antennaHeightNote>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L2 L1 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>DG-PRO1RWS02 HPG 1.13</b:receiverName>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="41.14289087029556" lon="141.3055457622425">
+		<ele>99.5257</ele>
+		<time>2023-11-09T11:43:43.000+09:00</time>
+		<geoidheight>35.0163</geoidheight>
+		<name>18.0</name>
+		<cmt>Raw-data lat=41.142887413 lon=141.30554877 ellipsoidHeight=134.599 Measurement_time_sec=60</cmt>
+		<fix>dgps</fix>
+		<sat>23</sat>
+		<hdop>0.57</hdop>
+		<vdop>0.97570485</vdop>
+		<pdop>1.13</pdop>
+		<extensions>
+			<b:pointNumber>120</b:pointNumber>
+			<b:coordGenaration>JGD2011_R</b:coordGenaration>
+			<b:coordinate_transform>
+				<b:type>JPN10</b:type>
+				<b:x>127007.8316</b:x>
+				<b:y>39639.8512</b:y>
+			</b:coordinate_transform>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2023-11-09T11:42:44.000</b:starttime>
+				<b:endtime>2023-11-09T11:43:43.000</b:endtime>
+				<b:epochs>60</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.6097</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.8581</b:stddevHeightMeter>
+				<b:lastHacc>0.943</b:lastHacc>
+				<b:lastVacc>1.091</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.0</b:tiltAntHeight>
+				<b:antennaHeightNote>2.0</b:antennaHeightNote>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L2 L1 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>DG-PRO1RWS02 HPG 1.13</b:receiverName>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="41.14276766291099" lon="141.30595148790962">
+		<ele>100.2846</ele>
+		<time>2023-11-09T11:45:20.000+09:00</time>
+		<geoidheight>35.0164</geoidheight>
+		<name>19.0</name>
+		<cmt>Raw-data lat=41.142764206 lon=141.305954495 ellipsoidHeight=135.358 Measurement_time_sec=60</cmt>
+		<fix>dgps</fix>
+		<sat>22</sat>
+		<hdop>0.57</hdop>
+		<vdop>0.9641058</vdop>
+		<pdop>1.12</pdop>
+		<extensions>
+			<b:pointNumber>121</b:pointNumber>
+			<b:coordGenaration>JGD2011_R</b:coordGenaration>
+			<b:coordinate_transform>
+				<b:type>JPN10</b:type>
+				<b:x>126994.3347</b:x>
+				<b:y>39673.9841</b:y>
+			</b:coordinate_transform>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2023-11-09T11:44:20.000</b:starttime>
+				<b:endtime>2023-11-09T11:45:20.000</b:endtime>
+				<b:epochs>60</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.4964</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>1.2395</b:stddevHeightMeter>
+				<b:lastHacc>0.793</b:lastHacc>
+				<b:lastVacc>0.886</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.0</b:tiltAntHeight>
+				<b:antennaHeightNote>2.0</b:antennaHeightNote>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>DG-PRO1RWS02 HPG 1.13</b:receiverName>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="41.142689129445245" lon="141.30633626962137">
+		<ele>105.4128</ele>
+		<time>2023-11-09T11:46:58.000+09:00</time>
+		<geoidheight>35.0162</geoidheight>
+		<name>20.0</name>
+		<cmt>Raw-data lat=41.142685673 lon=141.306339276 ellipsoidHeight=140.486 Measurement_time_sec=60</cmt>
+		<fix>dgps</fix>
+		<sat>22</sat>
+		<hdop>0.6</hdop>
+		<vdop>0.9575489</vdop>
+		<pdop>1.13</pdop>
+		<extensions>
+			<b:pointNumber>122</b:pointNumber>
+			<b:coordGenaration>JGD2011_R</b:coordGenaration>
+			<b:coordinate_transform>
+				<b:type>JPN10</b:type>
+				<b:x>126985.7892</b:x>
+				<b:y>39706.3322</b:y>
+			</b:coordinate_transform>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2023-11-09T11:45:58.000</b:starttime>
+				<b:endtime>2023-11-09T11:46:58.000</b:endtime>
+				<b:epochs>60</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.2458</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.962</b:stddevHeightMeter>
+				<b:lastHacc>0.888</b:lastHacc>
+				<b:lastVacc>1.154</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.0</b:tiltAntHeight>
+				<b:antennaHeightNote>2.0</b:antennaHeightNote>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L2OF L1OF </b:signals>
+				<b:receiverName>DG-PRO1RWS02 HPG 1.13</b:receiverName>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="41.14273436471292" lon="141.30668754051047">
+		<ele>107.3696</ele>
+		<time>2023-11-09T11:48:35.000+09:00</time>
+		<geoidheight>35.0154</geoidheight>
+		<name>21.0</name>
+		<cmt>Raw-data lat=41.142730909 lon=141.306690546 ellipsoidHeight=142.442 Measurement_time_sec=60</cmt>
+		<fix>dgps</fix>
+		<sat>22</sat>
+		<hdop>0.62</hdop>
+		<vdop>0.9922197</vdop>
+		<pdop>1.17</pdop>
+		<extensions>
+			<b:pointNumber>123</b:pointNumber>
+			<b:coordGenaration>JGD2011_R</b:coordGenaration>
+			<b:coordinate_transform>
+				<b:type>JPN10</b:type>
+				<b:x>126990.9726</b:x>
+				<b:y>39735.7925</b:y>
+			</b:coordinate_transform>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2023-11-09T11:47:29.000</b:starttime>
+				<b:endtime>2023-11-09T11:48:35.000</b:endtime>
+				<b:epochs>60</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.7739</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.8561</b:stddevHeightMeter>
+				<b:lastHacc>0.982</b:lastHacc>
+				<b:lastVacc>1.118</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.0</b:tiltAntHeight>
+				<b:antennaHeightNote>2.0</b:antennaHeightNote>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L2 L1 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>DG-PRO1RWS02 HPG 1.13</b:receiverName>
+			</b:measurement>
+		</extensions>
+</wpt>
+<wpt lat="41.14274750918771" lon="141.30696850817444">
+		<ele>106.1611</ele>
+		<time>2023-11-09T11:50:01.000+09:00</time>
+		<geoidheight>35.0149</geoidheight>
+		<name>22.0</name>
+		<cmt>Raw-data lat=41.142744054 lon=141.306971513 ellipsoidHeight=141.233 Measurement_time_sec=60</cmt>
+		<fix>dgps</fix>
+		<sat>22</sat>
+		<hdop>0.57</hdop>
+		<vdop>0.94079757</vdop>
+		<pdop>1.1</pdop>
+		<extensions>
+			<b:pointNumber>124</b:pointNumber>
+			<b:coordGenaration>JGD2011_R</b:coordGenaration>
+			<b:coordinate_transform>
+				<b:type>JPN10</b:type>
+				<b:x>126992.5605</b:x>
+				<b:y>39759.3705</b:y>
+			</b:coordinate_transform>
+			<b:measurement>
+				<b:geoidSystem>GSIGEO 2011 V2.2</b:geoidSystem>
+				<b:starttime>2023-11-09T11:49:01.000</b:starttime>
+				<b:endtime>2023-11-09T11:50:01.000</b:endtime>
+				<b:epochs>60</b:epochs>
+				<b:epochInterval>1.0</b:epochInterval>
+				<b:satMinEle>15.0</b:satMinEle>
+				<b:stddevDistanceMeter>0.9409</b:stddevDistanceMeter>
+				<b:stddevHeightMeter>0.9205</b:stddevHeightMeter>
+				<b:lastHacc>0.887</b:lastHacc>
+				<b:lastVacc>1.404</b:lastVacc>
+				<b:fixMode>3D DGNSS</b:fixMode>
+				<b:enableTiltCorrection>false</b:enableTiltCorrection>
+				<b:tiltAntHeight>0.0</b:tiltAntHeight>
+				<b:antennaHeightNote>2.0</b:antennaHeightNote>
+				<b:group>0</b:group>
+				<b:index>0</b:index>
+				<b:signals>L1 L2 E1 E5b L1OF L2OF </b:signals>
+				<b:receiverName>DG-PRO1RWS02 HPG 1.13</b:receiverName>
+			</b:measurement>
+		</extensions>
+</wpt>
+</gpx>
