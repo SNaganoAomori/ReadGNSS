@@ -7,7 +7,7 @@ import shapely
 
 from apps.geometries import estimate_utm_crs, reproject_xy, Labeling, XY, Label
 
-waypoint_file = os.path.join(os.path.dirname(__file__), "way_point.geojson")
+waypoint_file = os.path.join(os.path.dirname(__file__), "data", "way_point.geojson")
 gdf = gpd.read_file(waypoint_file)
 
 global POINTS_DEG

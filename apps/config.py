@@ -4,9 +4,10 @@ from enum import Enum
 import os
 import re
 from typing import Optional
-from typing import Union
+from typing import Union, NamedTuple
 import unicodedata
 
+from glob import glob
 import pandas as pd
 from pydantic import BaseModel
 from pydantic import field_validator
@@ -23,6 +24,9 @@ MAG_DATA = {
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 config_file = os.path.join(current_dir, "user\\config.yaml")
+
+# セミダイナミック補正のパラメーターファイル
+SEMIDYNA_FILES = glob(os.path.join(current_dir, "user", "SemiDyna*.par"))
 
 
 class NoLoader(yaml.SafeLoader):
@@ -459,3 +463,16 @@ class Label:
     label: str
     coordinate: shapely.geometry.Point
     size: float
+
+
+class MeshDesign(NamedTuple):
+    name: str
+    lon: float
+    lat: float
+    standard_mesh_code: str
+
+
+class Delta(NamedTuple):
+    delta_x: float
+    delta_y: float
+    delta_z: float

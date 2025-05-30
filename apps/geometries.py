@@ -15,6 +15,64 @@ class XY(NamedTuple):
     y: float | List[float]
 
 
+def degree_to_dms(degree: float) -> float:
+    """
+    10進経緯度を度分秒に変換する。
+    Args:
+        lon(float): 経度
+        lat(float): 緯度
+    Returns:
+        float:
+            度分秒形式の経緯度
+    Examples:
+        >>> degree_to_dms(140.08785504166664)
+        140516.27814
+        >>> degree_to_dms(36.103774791666666)
+        36103600.00000
+    """
+    deg = int(degree)
+    min_ = int((degree - deg) * 60)
+    _sec = str((degree - deg - min_ / 60) * 3600)
+    idx = _sec.find(".")
+    sec = int(_sec[:idx] if idx != -1 else _sec)
+    # マイクロ秒は小数点以下5桁までを想定
+    micro_sec = int(round(int(_sec[idx + 1 :][:6]) * 0.1))
+    # 度分秒が10未満の場合は0を付与
+    deg = f"0{deg}" if deg < 10 else str(deg)
+    min_ = f"0{min_}" if min_ < 10 else str(min_)
+    sec = f"0{sec}" if sec < 10 else str(sec)
+    return float(f"{deg}{min_}{sec}.{micro_sec}")
+
+
+def dms_to_degree(dms: float, digits: int = 10) -> float:
+    """
+    ## Description:
+        度分秒形式の経緯度を10進経緯度に変換する。
+    Args:
+        dms(float):
+            度分秒形式の経緯度
+        digits(int):
+            小数点以下の桁数。デフォルトは10桁。
+    Returns:
+        float:
+            10進経緯度
+    Examples:
+        >>> dms_to_degree(140516.27814)
+        140.08785504166664
+        >>> dms_to_degree(36103600.00000)
+        36.103774791666666
+    """
+    dms_str = str(dms)
+    sep = "."
+    sep_idx = dms_str.find(sep)
+    micro_sec = float(f"0.{dms_str[sep_idx + 1:]}")
+    integer = dms_str[:sep_idx]
+    sec = int(integer[-2:]) + micro_sec
+    min_ = int(integer[-4:-2])
+    deg = int(integer[:-4])
+    return round(deg + (min_ / 60) + (sec / 3600), digits)
+
+
 def estimate_utm_crs(lon: float, lat: float, datum_name: str = "JGD2011") -> str:
     """
     ## Description:

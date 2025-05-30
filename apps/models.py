@@ -53,6 +53,7 @@ def original_data_to(
         データを仕様に従って変換する
     Args:
         dict_data(Dict[str, Any]): 変換前のデータ（way-pointファイルを読み込んだデータなど）
+
     Returns:
         Dict(str | Any): 変換後のデータ
 
@@ -74,7 +75,10 @@ def original_data_to(
 
 def hex_to_abgr(hex_str: str, alpha: float = 1.0):
     """Convert hex to ABGR."""
-    func = lambda v: f"{int(v * 255):x}".zfill(2)
+
+    def func(v):
+        return f"{int(v * 255):x}".zfill(2)
+
     r, g, b, a = [func(v) for v in to_rgba(hex_str, alpha)]
     return "".join([a, b, g, r])
 

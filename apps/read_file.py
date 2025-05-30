@@ -21,7 +21,7 @@ class _DrgWayPoint(object):
         try:
             for node in tree:
                 results.append(node)
-        except:
+        except Exception:
             results.append(tree)
             pass
         return results
@@ -29,7 +29,7 @@ class _DrgWayPoint(object):
     def _convert_float(self, value):
         try:
             val = float(value)
-        except:
+        except Exception:
             return value
         else:
             return val
