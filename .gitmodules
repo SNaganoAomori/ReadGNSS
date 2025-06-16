@@ -1,3 +1,6 @@
 [submodule "apps/chiriin"]
 	path = apps/chiriin
 	url = https://github.com/shingo405nagano/chiriin.git
+[submodule "chiriin_mapper"]
+	path = chiriin_mapper
+	url = https://github.com/SNaganoAomori/chiriin_mapper.git
