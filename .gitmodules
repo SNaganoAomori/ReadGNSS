@@ -1,3 +1,6 @@
 [submodule "apps/chiriin"]
 	path = apps/chiriin
 	url = https://github.com/shingo405nagano/chiriin.git
+[submodule "chiriin"]
+	path = chiriin
+	url = https://github.com/shingo405nagano/chiriin.git
