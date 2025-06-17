@@ -1,4 +1,4 @@
-from matplotlib.colors import to_rgba, to_hex
+from matplotlib.colors import to_hex, to_rgba
 
 from .config import COLORS
 

@@ -1,6 +1,5 @@
 import math
-from typing import List
-from typing import NamedTuple
+from typing import List, NamedTuple
 
 import geopandas as gpd
 import pyproj
@@ -65,7 +64,7 @@ def dms_to_degree(dms: float, digits: int = 10) -> float:
     dms_str = str(dms)
     sep = "."
     sep_idx = dms_str.find(sep)
-    micro_sec = float(f"0.{dms_str[sep_idx + 1:]}")
+    micro_sec = float(f"0.{dms_str[sep_idx + 1 :]}")
     integer = dms_str[:sep_idx]
     sec = int(integer[-2:]) + micro_sec
     min_ = int(integer[-4:-2])
@@ -175,7 +174,7 @@ class Labeling(object):
         self, buffer: float = 100, distance: float = 20
     ) -> list[shapely.Point]:
         labels = []
-        for point, label in zip(self._points, self._labels):
+        for point, label in zip(self._points, self._labels, strict=False):
             pnt = self._recalc_label_coords(point, self._polygon, buffer, distance)
             labels.append(Label(label, pnt, 0))
         return labels
