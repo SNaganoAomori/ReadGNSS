@@ -1,3 +1,3 @@
 [run]
 source = apps
-omit = apps/tests/*
+omit = apps/tests/*, apps/chiriin/*

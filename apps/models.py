@@ -16,8 +16,8 @@ import shapely
 from matplotlib.colors import to_rgba
 from pydantic import BaseModel, field_validator, model_validator
 
+from apps.chiriin.drawer import chiriin_drawer
 from apps.config import (
-    MAG_DATA,
     MODEL_EN_FIELD_NAMES,
     MODEL_RENAME_EN_TO_JA,
     SIGNALS,
@@ -28,9 +28,6 @@ from apps.config import (
 )
 from apps.geometries import Labeling, estimate_utm_crs, reproject_xy
 from apps.kml import append_closed_document_style
-
-from .chiriin.chiriin.mesh import MeshCode
-from .chiriin.drawer import chiriin_drawer
 
 GeoJSON: TypeAlias = Dict[str, Any]
 Kml: TypeAlias = str
@@ -516,8 +513,7 @@ class DataModel(BaseModel):
         result = g.inv(self.longitude, self.latitude, model.longitude, model.latitude)
         azimuth = result[0]
         if mag:
-            mesh_code = MeshCode(self.longitude, self.latitude)
-            delta = MAG_DATA.get(mesh_code.secandary_mesh_code, 0)
+            delta = self.magnetic_declination()
             azimuth -= delta
         if azimuth < 0:
             azimuth += 360
@@ -600,7 +596,7 @@ class DataModel(BaseModel):
             extrude=False,
             altitude_mode=fastkml.geometry.AltitudeMode.clamp_to_ground,
             geometry=pygeoif.shape(self.geometry()),
-        )
+        )  # type: ignore
 
     def kml_like_placemark(
         self, lang: str = "ja", style_url: Optional[str] = None
