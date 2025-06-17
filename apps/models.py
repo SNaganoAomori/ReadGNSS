@@ -1,13 +1,7 @@
 import datetime
 import json
 import math
-import time
-from typing import Any
-from typing import Dict
-from typing import List
-from typing import Optional
-from typing import TypeAlias
-from typing import Union
+from typing import Any, Dict, List, Optional, TypeAlias, Union
 
 import fastkml
 import fastkml.data
@@ -15,38 +9,36 @@ import fastkml.enums
 import fastkml.geometry
 import fastkml.kml
 import fastkml.styles
-from matplotlib.colors import to_rgba
 import pandas as pd
-from pydantic import BaseModel
-from pydantic import field_validator
-from pydantic import model_validator
 import pygeoif
 import pyproj
 import shapely
+from matplotlib.colors import to_rgba
+from pydantic import BaseModel, field_validator, model_validator
 
-from apps.config import GoogleIcons
-from apps.config import Label
-from apps.config import MAG_DATA
-from apps.config import MODEL_EN_FIELD_NAMES
-from apps.config import MODEL_RENAME_EN_TO_JA
-from apps.config import formatter
-from apps.config import OptionalFieldNames
-from apps.config import SIGNALS
-from apps.geometries import estimate_utm_crs
-from apps.geometries import Labeling
-from apps.geometries import reproject_xy
+from apps.config import (
+    MAG_DATA,
+    MODEL_EN_FIELD_NAMES,
+    MODEL_RENAME_EN_TO_JA,
+    SIGNALS,
+    GoogleIcons,
+    Label,
+    OptionalFieldNames,
+    formatter,
+)
+from apps.geometries import Labeling, estimate_utm_crs, reproject_xy
 from apps.kml import append_closed_document_style
-from apps.mesh import MeshCode
-from apps.web import fetch_elevation_from_web
-from apps.web import Coords
-from apps.web import fetch_corrected_semidynamic_from_web
+
+from .chiriin.chiriin.mesh import MeshCode
+from .chiriin.drawer import chiriin_drawer
 
 GeoJSON: TypeAlias = Dict[str, Any]
 Kml: TypeAlias = str
 
 
 def original_data_to(
-    dict_data: Dict[str, Any], data_spac: Dict[str, str]  # {org_col: rename_col}
+    dict_data: Dict[str, Any],
+    data_spac: Dict[str, str],  # {org_col: rename_col}
 ) -> Dict[str, Any]:
     """
     ## Description:
@@ -157,7 +149,7 @@ class DataModel(BaseModel):
             except (ValueError, TypeError):
                 values[field_name] = None
         # 避けておいたフィールドを戻す
-        for field_name, field_value in zip(pop_names, vaults):
+        for field_name, field_value in zip(pop_names, vaults, strict=False):
             values[field_name] = field_value
         return values
 
@@ -454,9 +446,7 @@ class DataModel(BaseModel):
             >>> point2 = DataModel(longitude=141.0, latitude=41.0)
             >>> distance = point1.distance(point2)
         """
-        pnt_1 = (
-            self.geometry(utm=True) if self.epsg is None else self.geometry(jgd=True)
-        )
+        pnt_1 = self.geometry(utm=True) if self.epsg is None else self.geometry(jgd=True)
         pnt_2 = (
             model.geometry(utm=True) if model.epsg is None else model.geometry(jgd=True)
         )
@@ -475,9 +465,7 @@ class DataModel(BaseModel):
             >>> point2 = DataModel(longitude=141.0, latitude=41.0)
             >>> distance = point1.calc_slope_distance(point2)
         """
-        pnt_1 = (
-            self.geometry(utm=True) if self.epsg is None else self.geometry(jgd=True)
-        )
+        pnt_1 = self.geometry(utm=True) if self.epsg is None else self.geometry(jgd=True)
         pnt_2 = (
             model.geometry(utm=True) if model.epsg is None else model.geometry(jgd=True)
         )
@@ -498,9 +486,7 @@ class DataModel(BaseModel):
             >>> point2 = DataModel(longitude=141.0, latitude=41.0)
             >>> angle = point1.calc_angle_deg(point2)
         """
-        pnt_1 = (
-            self.geometry(utm=True) if self.epsg is None else self.geometry(jgd=True)
-        )
+        pnt_1 = self.geometry(utm=True) if self.epsg is None else self.geometry(jgd=True)
         pnt_2 = (
             model.geometry(utm=True) if model.epsg is None else model.geometry(jgd=True)
         )
@@ -589,7 +575,7 @@ class DataModel(BaseModel):
         data_list = []
         ja_keys = self.get_properties(lang="ja")
         for ja_key, (en_key, val) in zip(
-            ja_keys, self.get_properties(lang="en").items()
+            ja_keys, self.get_properties(lang="en").items(), strict=False
         ):
             if lang == "en":
                 # 英語の場合は日本語のキーを削除する
@@ -634,6 +620,16 @@ class DataModel(BaseModel):
         if style_url:
             placemark.style_url = fastkml.styles.StyleUrl(url=f"#{style_url}")
         return placemark
+
+    def magnetic_declination(self) -> float:
+        """
+        ## Description:
+            測点の地磁気値偏角を取得する
+        Returns:
+            (float): 地磁気値偏角
+        """
+        mag = chiriin_drawer.magnetic_declination(self.longitude, self.latitude)
+        return mag
 
     def __str__(self) -> str:
         properties = self.get_properties(lang="en")
@@ -900,7 +896,7 @@ class DataModels(BaseModel):
             raise ValueError("idx is out of range.")
         self.models.pop(idx)
 
-    def add_models(self, models: Union[DataModel | List[DataModel]]) -> None:
+    def add_models(self, models: Union[DataModel, List[DataModel]]) -> None:
         """
         Description:
             DataModelを追加する
@@ -994,7 +990,9 @@ class DataModels(BaseModel):
         )
         labels = []
         for label, model in zip(
-            labeling.calculate_label_positions(buffer, distance), self.models
+            labeling.calculate_label_positions(buffer, distance),
+            self.models,
+            strict=False,
         ):
             label.size = model.point_size
             labels.append(label)
@@ -1024,7 +1022,7 @@ class DataModels(BaseModel):
         if (jgd == True) and (self.models[0].epsg is not None):
             X = [model.transformed_X for model in self.models]
             Y = [model.transformed_Y for model in self.models]
-            points = [shapely.Point(x, y) for x, y in zip(Y, X)]
+            points = [shapely.Point(x, y) for x, y in zip(Y, X, strict=False)]
         elif utm:
             in_crs = pyproj.CRS.from_epsg(4326).to_wkt()
             utm_crs = estimate_utm_crs(points[0].x, points[0].y, self.datum_name)
@@ -1034,7 +1032,7 @@ class DataModels(BaseModel):
                 in_crs=in_crs,
                 out_crs=utm_crs,
             )
-            points = [shapely.Point(x, y) for x, y in zip(xy.x, xy.y)]
+            points = [shapely.Point(x, y) for x, y in zip(xy.x, xy.y, strict=False)]
         if wkt:
             return [f"POINT({point.x} {point.y})" for point in points]
         return points
@@ -1087,95 +1085,19 @@ class DataModels(BaseModel):
             return polygon.wkt
         return polygon
 
-    def fetch_elevation_from_web(
-        self, max_retry: int = 5, time_sleep: int = 10
-    ) -> List[float]:
-        """
-        ## Description:
-            地理院APIで標高値を取得する
-        Args:
-            max_retry(int): リトライ回数
-            time_sleep(int): リトライ時の待ち時間
-        Returns:
-            List[float]: 標高値のリスト
-        Example:
-            >>> datasets = DatasetsModel(models=data_models, sort_column=sort_column)
-            >>> elevations = datasets.fetch_elevation_from_web()
-        """
-        # 経緯度のリストを作成する
-        points = self.points()
-        lons = [point.x for point in points]
-        lats = [point.y for point in points]
-        try:
-            # 地理院APIで標高値を取得する
-            resps = fetch_elevation_from_web(lons, lats)
-            # Noneのインデックスを取得する
-            none_indices = [i for i, v in enumerate(resps) if v is None]
-            retry = 0
-            while True:
-                if max_retry < retry:
-                    break
-                # 取得できなかった標高値はもう一度取得を試みる
-                if none_indices:
-                    lons = [lons[i] for i in none_indices]
-                    lats = [lats[i] for i in none_indices]
-                    resps2 = fetch_elevation_from_web(lons, lats)
-                    for i, idx in enumerate(none_indices):
-                        resps.pop(idx)
-                        resps.insert(idx, resps2.pop(i))
-                else:
-                    break
-                none_indices = [i for i, v in enumerate(resps) if v is None]
-                if none_indices:
-                    retry += 1
-                    time.sleep(int(retry + time_sleep))
-        except:
-            resps = [None] * len(lons)
-        return resps
+    def fetch_elevation_from_web(self, max_retry: int = 5, time_sleep: int = 10):
+        pass
 
     def fetch_corrected_semidynamic_from_web(
         self, max_retry: int = 5, time_sleep: int = 10
-    ) -> List[Coords]:
+    ):
         """
         ## Description:
             地理院APIでセミダイナミック補正を行う
         Args:
-            max_retry(int): リトライ回数
-            time_sleep(int): リトライ時の待ち時間
-        Returns:
-            List[Coords]: NamedTuple(longitude: float, latitude: float, altitude: float))
+
         """
-        points = self.points()
-        correction_datetime = self.models[0].end
-        lons = [point.x for point in points]
-        lats = [point.y for point in points]
-        try:
-            resps = fetch_corrected_semidynamic_from_web(
-                correction_datetime, lons, lats
-            )
-            none_indices = [i for i, v in enumerate(resps) if v is None]
-            retry = 0
-            while True:
-                if max_retry < retry:
-                    break
-                if none_indices:
-                    lons = [lons[i] for i in none_indices]
-                    lats = [lats[i] for i in none_indices]
-                    resps2 = fetch_corrected_semidynamic_from_web(
-                        correction_datetime, lons, lats
-                    )
-                    for i, idx in enumerate(none_indices):
-                        resps.pop(idx)
-                        resps.insert(idx, resps2.pop(i))
-                else:
-                    break
-                none_indices = [i for i, v in enumerate(resps) if v is None]
-                if none_indices:
-                    retry += 1
-                    time.sleep(int(retry + time_sleep))
-        except:
-            resps = [None] * len(lons)
-        return resps
+        pass
 
     def static_property(self, lang: str = "en") -> Dict[str, Any]:
         properties = [model.get_properties() for model in self.models]
@@ -1204,16 +1126,14 @@ class DataModels(BaseModel):
             MODEL_EN_FIELD_NAMES.branch_office: df[
                 MODEL_EN_FIELD_NAMES.branch_office
             ].iloc[0],
-            MODEL_EN_FIELD_NAMES.local_area: df[MODEL_EN_FIELD_NAMES.local_area].iloc[
+            MODEL_EN_FIELD_NAMES.local_area: df[MODEL_EN_FIELD_NAMES.local_area].iloc[0],
+            MODEL_EN_FIELD_NAMES.address: df[MODEL_EN_FIELD_NAMES.address].iloc[0],
+            MODEL_EN_FIELD_NAMES.project_year: df[MODEL_EN_FIELD_NAMES.project_year].iloc[
                 0
             ],
-            MODEL_EN_FIELD_NAMES.address: df[MODEL_EN_FIELD_NAMES.address].iloc[0],
-            MODEL_EN_FIELD_NAMES.project_year: df[
-                MODEL_EN_FIELD_NAMES.project_year
-            ].iloc[0],
-            MODEL_EN_FIELD_NAMES.project_name: df[
-                MODEL_EN_FIELD_NAMES.project_name
-            ].iloc[0],
+            MODEL_EN_FIELD_NAMES.project_name: df[MODEL_EN_FIELD_NAMES.project_name].iloc[
+                0
+            ],
         }
         if lang == "ja":
             rename_dict = MODEL_RENAME_EN_TO_JA
@@ -1259,7 +1179,7 @@ class DataModels(BaseModel):
             >>> slope_length = datasets.calculate_slope_length()
         """
         length = 0
-        for current, forward in zip(self.models[:-1], self.models[1:]):
+        for current, forward in zip(self.models[:-1], self.models[1:], strict=False):
             length += current.calc_slope_distance(forward)
         return round(length, 3)
 
@@ -1326,7 +1246,7 @@ PDOP（平均）          : {stats[MODEL_EN_FIELD_NAMES.pdop]}
         distance_list = []
         current_models = self.models
         forward_models = self.models[1:] + [self.models[0]]
-        for current, forward in zip(current_models, forward_models):
+        for current, forward in zip(current_models, forward_models, strict=False):
             azimuth_list.append(current.calc_azimuth_deg(forward, mag=mag))
             if slope:
                 angle_list.append(current.calc_angle_deg(forward))
@@ -1362,6 +1282,7 @@ PDOP（平均）          : {stats[MODEL_EN_FIELD_NAMES.pdop]}
             cds["azimuth_list"],
             cds["angle_list"],
             cds["distance_list"],
+            strict=False,
         )
         for i, (name, azimuth, angle, distance) in enumerate(zipper):
             txt += f"{i},{name},{azimuth},{angle},{distance}\n"
@@ -1374,12 +1295,13 @@ PDOP（平均）          : {stats[MODEL_EN_FIELD_NAMES.pdop]}
             cds["azimuth_list"],
             cds["angle_list"],
             cds["distance_list"],
+            strict=False,
         )
         indent = " "
         tab = " " * 2
         txt = f"{indent}0{tab}0{tab}0{tab}0{tab}\n"
         for i, (name, azimuth, angle, distance) in enumerate(zipper):
-            txt += f"{indent}{i+1}({name}){tab}{azimuth}{tab}{angle}{tab}{distance}\n"
+            txt += f"{indent}{i + 1}({name}){tab}{azimuth}{tab}{angle}{tab}{distance}\n"
         return txt
 
     def models_dump_dxf_by_point(self):
@@ -1640,7 +1562,7 @@ PDOP（平均）          : {stats[MODEL_EN_FIELD_NAMES.pdop]}
             OptionalFieldNames.slope_length,
             OptionalFieldNames.area,
         ]
-        for en_key, (key, val) in zip(en_keys, ja_data.items()):
+        for en_key, (key, val) in zip(en_keys, ja_data.items(), strict=False):
             if val is None:
                 val = ""
             elif not isinstance(val, str):

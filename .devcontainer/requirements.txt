@@ -47,6 +47,7 @@ pytest-metadata==3.1.1
 pytest-xdist==3.7.0
 python-dateutil==2.9.0.post0
 pytz==2025.2
+PyYAML==6.0.2
 requests==2.32.4
 ruff==0.11.13
 setuptools==75.6.0

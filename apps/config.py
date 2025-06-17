@@ -1,29 +1,27 @@
-from dataclasses import dataclass
 import datetime
-from enum import Enum
 import os
 import re
-from typing import Optional
-from typing import Union, NamedTuple
 import unicodedata
-
+from dataclasses import dataclass
+from enum import Enum
 from glob import glob
+from typing import NamedTuple, Optional, Union
+
 import pandas as pd
-from pydantic import BaseModel
-from pydantic import field_validator
 import shapely
 import yaml
+from pydantic import BaseModel, field_validator
 
 # 地磁気値（偏角）を記録したcsvファイルを読み込む
 mag_df = pd.read_csv(r"./apps/user/mag_2020.csv")
 mag_df["mesh_code"] = mag_df["mesh_code"].astype(int).astype(str)
 MAG_DATA = {
     mesh_code: mag_value
-    for mesh_code, mag_value in zip(mag_df["mesh_code"], mag_df["mag"])
+    for mesh_code, mag_value in zip(mag_df["mesh_code"], mag_df["mag"], strict=False)
 }
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
-config_file = os.path.join(current_dir, "user\\config.yaml")
+config_file = os.path.join(current_dir, "user/config.yaml")
 
 # セミダイナミック補正のパラメーターファイル
 SEMIDYNA_FILES = glob(os.path.join(current_dir, "user", "SemiDyna*.par"))
@@ -187,6 +185,7 @@ MODEL_RENAME_EN_TO_JA = {
     for en_name, ja_name in zip(
         MODEL_EN_FIELD_NAMES.model_dump().values(),
         MODEL_JA_FIELD_NAMES.model_dump().values(),
+        strict=False,
     )
 }
 
@@ -195,6 +194,7 @@ MODEL_RENAME_JP_TO_EN = {
     for en_name, jp_name in zip(
         MODEL_EN_FIELD_NAMES.model_dump().values(),
         MODEL_JA_FIELD_NAMES.model_dump().values(),
+        strict=False,
     )
 }
 
