@@ -1,0 +1,3 @@
+[run]
+source = chiriin
+omit = chiriin/tests/*
