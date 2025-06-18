@@ -15,20 +15,22 @@ from typing import Iterable
 
 import pyproj
 import shapely.geometry
-
-from chiriin.config import XY, XYZ, RelativePosition, TileData, TileUrls
-from chiriin.formatter import (
+from apps.chiriin.chiriin.config import XY, XYZ, RelativePosition, TileData, TileUrls
+from apps.chiriin.chiriin.formatter import (
     type_checker_crs,
     type_checker_elev_type,
     type_checker_img_type,
     type_checker_iterable,
 )
-from chiriin.geometries import transform_xy
-from chiriin.mag import get_magnetic_declination
-from chiriin.mesh import MeshCode
-from chiriin.semidynamic import SemiDynamic
-from chiriin.tile import search_tile_info_from_geometry, search_tile_info_from_xy
-from chiriin.web import (
+from apps.chiriin.chiriin.geometries import transform_xy
+from apps.chiriin.chiriin.mag import get_magnetic_declination
+from apps.chiriin.chiriin.mesh import MeshCode
+from apps.chiriin.chiriin.semidynamic import SemiDynamic
+from apps.chiriin.chiriin.tile import (
+    search_tile_info_from_geometry,
+    search_tile_info_from_xy,
+)
+from apps.chiriin.chiriin.web import (
     fetch_distance_and_azimuth_from_web,
     fetch_elevation_from_web,
     fetch_elevation_tiles_from_web,

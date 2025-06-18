@@ -1,10 +1,10 @@
 import math
 import warnings
 
-from chiriin.config import MAG_DATA
-from chiriin.formatter import type_checker_float
-from chiriin.geometries import dms_to_degree
-from chiriin.mesh import MeshCode
+from apps.chiriin.chiriin.config import MAG_DATA
+from apps.chiriin.chiriin.formatter import type_checker_float
+from apps.chiriin.chiriin.geometries import dms_to_degree
+from apps.chiriin.chiriin.mesh import MeshCode
 
 
 @type_checker_float(arg_index=0, kward="lon")

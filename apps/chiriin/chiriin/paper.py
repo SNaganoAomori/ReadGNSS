@@ -7,19 +7,22 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import numpy as np
 import pyproj
 import shapely
-from matplotlib import pyplot as plt
-from matplotlib.ticker import ScalarFormatter
-from shapely.geometry.base import BaseGeometry
-
-from chiriin.config import FigureSize, Icons, PaperSize, Scope, TileUrls
-from chiriin.formatter import crs_formatter, type_checker_crs, type_checker_float
-from chiriin.geometries import (
+from apps.chiriin._drawer import _ChiriinDrawer
+from apps.chiriin.chiriin.config import FigureSize, Icons, PaperSize, Scope, TileUrls
+from apps.chiriin.chiriin.formatter import (
+    crs_formatter,
+    type_checker_crs,
+    type_checker_float,
+)
+from apps.chiriin.chiriin.geometries import (
     estimate_utm_crs,
     get_geometry_center,
     transform_geometry,
 )
-from chiriin.utils import dimensional_count
-from _drawer import _ChiriinDrawer
+from apps.chiriin.chiriin.utils import dimensional_count
+from matplotlib import pyplot as plt
+from matplotlib.ticker import ScalarFormatter
+from shapely.geometry.base import BaseGeometry
 
 chiriin_drawer = _ChiriinDrawer()
 paper_size = PaperSize()

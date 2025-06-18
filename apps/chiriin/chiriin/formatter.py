@@ -4,8 +4,7 @@ from typing import Any, Iterable
 
 import pyproj
 import shapely
-
-from chiriin.utils import dimensional_count
+from apps.chiriin.chiriin.utils import dimensional_count
 
 DEM_TYPES = ["dem10b", "dem5a", "dem5b"]
 IMG_TYPES = ["standard", "photo", "slope", "google_satellite"]

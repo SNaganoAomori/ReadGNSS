@@ -1,7 +1,7 @@
 import math
 
-from chiriin.formatter import type_checker_float
-from chiriin.geometries import dms_to_degree_lonlat
+from apps.chiriin.chiriin.formatter import type_checker_float
+from apps.chiriin.chiriin.geometries import dms_to_degree_lonlat
 
 
 class MeshCode(object):

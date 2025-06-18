@@ -4,16 +4,21 @@ from typing import Iterable, Optional, Union
 
 import numpy as np
 import pandas as pd
-
-from chiriin.config import XY, XYZ, Delta, MeshDesign, semidynamic_correction_file
-from chiriin.formatter import (
+from apps.chiriin.chiriin.config import (
+    XY,
+    XYZ,
+    Delta,
+    MeshDesign,
+    semidynamic_correction_file,
+)
+from apps.chiriin.chiriin.formatter import (
     datetime_formatter,
     iterable_decimalize_formatter,
     type_checker_decimal,
 )
-from chiriin.mesh import MeshCode
-from chiriin.utils import dimensional_count
-from chiriin.web import fetch_corrected_semidynamic_from_web
+from apps.chiriin.chiriin.mesh import MeshCode
+from apps.chiriin.chiriin.utils import dimensional_count
+from apps.chiriin.chiriin.web import fetch_corrected_semidynamic_from_web
 
 
 class SemiDynamic(object):

@@ -115,5 +115,7 @@
     "reportAttributeAccessIssue": false,
     "reportArgumentType": false,
     "reportCallIssue": false,
+    "ereportReturnType": false,
+    "reportAssignmentType": false,
 }
 }
