@@ -4,6 +4,7 @@
 3. どちらの経緯度でも、求める単位に変換（リストも可）
 """
 
+import math
 from decimal import Decimal
 from typing import Iterable
 
@@ -481,3 +482,28 @@ def get_geometry_scope(
     if in_crs.to_epsg() != out_crs.to_epsg():
         geometry = transform_geometry(geometry, in_crs, out_crs)
     return Scope(*geometry.bounds)
+
+
+def get_coordinates_from(
+    pnt: shapely.Point, degree: float, distance: float
+) -> shapely.Point:
+    """
+    ## Summary:
+        任意の地点から、方向と距離を指定した位置を求める
+    Args:
+        pnt(shapely.Point):
+            開始位置
+        degree(float):
+            方向角
+        distance(float):
+            距離
+    Returns:
+        shapely.Point:
+    """
+    from decimal import Decimal
+
+    tmp = (Decimal("90.0") - Decimal(f"{degree}")) % Decimal("360.0")
+    radians = math.radians(float(tmp))
+    x = pnt.x + math.cos(radians) * distance
+    y = pnt.y + math.sin(radians) * distance
+    return shapely.Point(x, y)
