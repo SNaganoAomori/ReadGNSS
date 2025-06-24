@@ -1,6 +1,6 @@
 {    
     "editor.fontFamily": "UDEV Gothic",
-    "workbench.colorTheme": "Jupyter Theme",
+    "workbench.colorTheme": "JupyterLab Light",
     "workbench.colorCustomizations": {
         "activityBar.background": "#ff9500",
         "editor.selectionBackground": "#66ff00",
